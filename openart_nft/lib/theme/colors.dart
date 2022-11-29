@@ -12,6 +12,7 @@ class AppColor {
   static const inputBg = Color(0xffF0F0F0);
   static const bgColor = Color(0xffF8F8F8);
   static const offWhite = Color(0xffFCFCFC);
+  static const white = Color(0xffFFFFFF);
 
 // Colors
 
