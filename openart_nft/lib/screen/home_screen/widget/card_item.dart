@@ -105,7 +105,7 @@ class ProductWidget extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  AvatarWidget(url: AppImage.avatarImage, status: true),
+                  AvatarWidget(url: avatarUrl, status: true),
                   Container(
                     margin: EdgeInsets.only(left: Dimens.PADDING_10),
                     child: Column(
