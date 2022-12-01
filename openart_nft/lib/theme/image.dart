@@ -24,4 +24,10 @@ class AppImage {
   // IMAGE
   static String image1 = 'res/image/image1.png';
   static String rectangle = 'res/image/Rectangle.png';
+  static String rectangle1 = 'res/image/Rectangle1.png';
+  static String rectangle2 = 'res/image/Rectangle2.png';
+  static String rectangle3 = 'res/image/Rectangle3.png';
+  static String rectangle4 = 'res/image/Rectangle4.png';
+  static String rectangle5 = 'res/image/Rectangle5.png';
+  static String avatarImage = 'res/image/avatarImage.jpg';
 }

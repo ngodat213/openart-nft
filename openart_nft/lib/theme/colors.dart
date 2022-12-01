@@ -14,7 +14,11 @@ class AppColor {
   static const offWhite = Color(0xffFCFCFC);
   static const white = Color(0xffFFFFFF);
 
-// Colors
+// Colors default
+  static const successDefault = Color(0xff009846);
+  static const errorDark = Color(0xffFD0025);
+
+// Color gradient
 
   static const primaryColor =
       LinearGradient(colors: [Color(0xff0000EA), Color(0xff005CFF)]);
@@ -32,4 +36,6 @@ class AppColor {
       LinearGradient(colors: [Color(0xffFF8200), Color(0xffFFFF02)]);
   static const gradientAccent =
       LinearGradient(colors: [Color(0xff0000F6), Color(0xff9041FF)]);
+  static const gradientButton =
+      LinearGradient(colors: [Color(0xff0038F5), Color(0xff9F03FF)]);
 }

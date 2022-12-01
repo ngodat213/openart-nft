@@ -1,16 +1,31 @@
 class Dimens {
   Dimens._();
+// HEIGHT
+
+  static const HEIGHT_118 = 118.0;
+  static const HEIGHT_64 = 64.0;
+  static const HEIGHT_56 = 56.0;
+  static const HEIGHT_40 = 40.0;
+  static const HEIGHT_38 = 38.0;
+  static const HEIGHT_12 = 12.0;
+  static const HEIGHT_1 = 1.0;
+
 // PADDING
+  static const PADDING_110 = 110.0;
+  static const PADDING_38 = 38.0;
   static const PADDING_24 = 24.0;
   static const PADDING_22 = 22.0;
   static const PADDING_20 = 20.0;
   static const PADDING_16 = 16.0;
   static const PADDING_13 = 13.0;
   static const PADDING_10 = 10.0;
+  static const PADDING_7 = 7.0;
   static const PADDING_6 = 6.0;
   static const PADDING_4 = 4.0;
 
 // BORDER RADIUS
+  static const RADIUS_100 = 100.0;
+  static const RADIUS_51 = 51.0;
   static const RADIUS_32 = 32.0;
   static const RADIUS_8 = 8.0;
 
@@ -28,4 +43,6 @@ class Dimens {
 
   static const SIZE_20 = 20.0;
   static const SIZE_16 = 16.0;
+  static const SIZE_9 = 9.0;
+  static const SIZE_6 = 6.0;
 }

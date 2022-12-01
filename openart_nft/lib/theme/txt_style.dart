@@ -68,7 +68,14 @@ class TxtStyleMobile {
   );
 
 // LINK
-  static TextStyle link_Large = GoogleFonts.epilogue(
+  static TextStyle link_Large1 = GoogleFonts.epilogue(
+    color: AppColor.offWhite,
+    fontSize: Dimens.FONT_SIZE_20,
+    fontWeight: FontWeight.w700,
+  );
+
+  static TextStyle link_Large2 = GoogleFonts.epilogue(
+    color: AppColor.titleActive,
     fontSize: Dimens.FONT_SIZE_20,
     fontWeight: FontWeight.w700,
   );

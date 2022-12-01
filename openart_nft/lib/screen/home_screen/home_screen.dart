@@ -4,6 +4,15 @@ import '../../theme/colors.dart';
 import '../../theme/dimens.dart';
 import '../../theme/image.dart';
 import '../../theme/txt_style.dart';
+import 'widget/sold_for.dart';
+import 'widget/card_item.dart';
+import 'widget/current_bid.dart';
+import 'widget/price.dart';
+import 'widget/raised_gradient_button.dart';
+import 'widget/search_bar.dart';
+import 'widget/header.dart';
+import 'widget/border_gradient_button.dart';
+import 'widget/live_acction.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -42,191 +51,93 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                   SearchBarWidget(),
-                  CardItemWidget(),
-                  PriceWidget()
+                  Container(
+                    margin: EdgeInsets.only(top: Dimens.PADDING_24),
+                    child: CardItemWidget(
+                      urlImage: AppImage.rectangle,
+                      description: "Silent Wave",
+                      name: 'Pawel Czerwinski',
+                      status: 'Creator',
+                      avatarUrl: AppImage.avatarImage,
+                      size: size,
+                    ),
+                  ),
+                  PriceWidget(eth: 1.5, usd: 2683.73),
+                  RaisedGradientButton(
+                    size: size,
+                    onPressed: () {},
+                    child: Text(
+                      'Place a bid',
+                      style: TxtStyleMobile.link_Large1,
+                    ),
+                  ),
+                  SizedBox(height: 20),
+                  BorderGradinetButton(
+                    size: size,
+                    onPressed: () {},
+                    child: Text(
+                      'View artwork',
+                      style: TxtStyleMobile.link_Large2,
+                    ),
+                  ),
+                  LiveAcctionWidget(),
+                  CardItemWidget(
+                    urlImage: AppImage.rectangle1,
+                    description: "Silent Color",
+                    name: 'Pawel Czerwinski',
+                    status: 'Creator',
+                    avatarUrl: AppImage.avatarImage,
+                    size: size,
+                  ),
+                  SizedBox(height: Dimens.HEIGHT_12),
+                  SoldForWidget(size: size, eth: '2.00'),
+                  SizedBox(height: Dimens.HEIGHT_40),
+                  CardItemWidget(
+                    urlImage: AppImage.rectangle2,
+                    description: "Silent Color",
+                    name: 'Pawel Czerwinski',
+                    status: 'Creator',
+                    avatarUrl: AppImage.avatarImage,
+                    size: size,
+                  ),
+                  SizedBox(height: Dimens.HEIGHT_12),
+                  SoldForWidget(size: size, eth: '2.00'),
+                  SizedBox(height: Dimens.HEIGHT_40),
+                  CardItemWidget(
+                    urlImage: AppImage.rectangle3,
+                    description: "Silent Color",
+                    name: 'Pawel Czerwinski',
+                    status: 'Creator',
+                    avatarUrl: AppImage.avatarImage,
+                    size: size,
+                  ),
+                  SizedBox(height: Dimens.HEIGHT_12),
+                  CurrentBidWidget(
+                    size: size,
+                    current: '2.00',
+                    timeEnding: '27m 30s',
+                  ),
+                  SizedBox(height: Dimens.HEIGHT_40),
+                  CardItemWidget(
+                    urlImage: AppImage.rectangle4,
+                    description: "Silent Color",
+                    name: 'Pawel Czerwinski',
+                    status: 'Creator',
+                    avatarUrl: AppImage.avatarImage,
+                    size: size,
+                  ),
+                  SizedBox(height: Dimens.HEIGHT_12),
+                  CurrentBidWidget(
+                    size: size,
+                    current: '2.00',
+                    timeEnding: '27m 30s',
+                  ),
+                  SizedBox(height: 200),
                 ],
               ),
             ],
           ),
         ),
-      ),
-    );
-  }
-}
-
-class PriceWidget extends StatelessWidget {
-  const PriceWidget({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Padding(
-        padding: const EdgeInsets.only(
-          top: Dimens.PADDING_20,
-          bottom: Dimens.PADDING_16,
-        ),
-        child: RichText(
-          text: TextSpan(
-            children: [
-              TextSpan(
-                  text: 'Reserve Price ', style: TxtStyleMobile.txt_Medium),
-              TextSpan(text: '1.50 ETH ', style: TxtStyleMobile.h3b),
-              TextSpan(text: '\$2,683.73', style: TxtStyleMobile.link_Small),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class CardItemWidget extends StatelessWidget {
-  const CardItemWidget({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Container(
-        margin: EdgeInsets.only(top: Dimens.PADDING_22),
-        width: 342,
-        decoration: BoxDecoration(
-          color: AppColor.white,
-          borderRadius: BorderRadius.circular(Dimens.RADIUS_32),
-          boxShadow: [
-            BoxShadow(
-              color: AppColor.placeholder.withOpacity(0.5),
-              offset: Offset(0.0, 1.0), //(x,y)
-              blurRadius: 5.0,
-            ),
-          ],
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Container(
-              padding: EdgeInsets.all(Dimens.PADDING_10),
-              child: Image.asset(
-                AppImage.rectangle,
-                fit: BoxFit.contain,
-              ),
-            ),
-            Container(
-              margin: EdgeInsets.only(
-                left: Dimens.PADDING_13,
-              ),
-              child: Text(
-                'Silent Wave',
-                style: TxtStyleMobile.h3b,
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(
-                left: Dimens.PADDING_13,
-                top: Dimens.PADDING_4,
-                right: Dimens.PADDING_22,
-                bottom: Dimens.PADDING_16,
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Row(
-                    children: [
-                      Container(
-                        width: 48,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          image: DecorationImage(
-                            image: AssetImage(AppImage.rectangle),
-                          ),
-                        ),
-                      ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text('Pawel Czerwinski',
-                              style: TxtStyleDesktop.link_Medium),
-                          Text('Creator', style: TxtStyleDesktop.txt_XSmall),
-                        ],
-                      ),
-                    ],
-                  ),
-                  ImageIcon(
-                    AssetImage(AppImage.icon_Heart),
-                    size: Dimens.SIZE_20,
-                  ),
-                ],
-              ),
-            )
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class SearchBarWidget extends StatelessWidget {
-  const SearchBarWidget({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.symmetric(horizontal: Dimens.PADDING_24),
-      padding: EdgeInsets.only(
-        left: Dimens.PADDING_10,
-        right: Dimens.PADDING_10,
-      ),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(Dimens.RADIUS_8),
-        color: AppColor.inputBg,
-      ),
-      child: Row(
-        children: [
-          Expanded(
-            child: TextField(
-              decoration: InputDecoration(
-                hintText: 'Search items, collections, and accounts',
-                hintStyle: TxtStyleMobile.txt_XSmall,
-                border: InputBorder.none,
-                icon: ImageIcon(
-                  AssetImage(AppImage.icon_Search),
-                  size: Dimens.SIZE_16,
-                ),
-              ),
-            ),
-          ),
-          ImageIcon(
-            AssetImage(AppImage.icon_Microphone),
-            size: Dimens.SIZE_16,
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class HeaderWidget extends StatelessWidget {
-  const HeaderWidget({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.fromLTRB(
-        Dimens.PADDING_16,
-        Dimens.PADDING_6,
-        Dimens.PADDING_16,
-        Dimens.PADDING_16,
-      ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [Image.asset(AppImage.logo), Image.asset(AppImage.icon_Menu)],
       ),
     );
   }
