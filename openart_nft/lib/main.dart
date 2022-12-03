@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'screen/detail_sold/detail_sold.dart';
+import 'manager/manager_routes.dart';
+import 'screen/home_screen/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: DetailSoldScreen(),
+      home: HomeScreen(),
+      routes: ManagerRoutes.manager,
     );
   }
 }

@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 
+import '../../manager/manager_routes.dart';
 import '../../theme/colors.dart';
 import '../../theme/dimens.dart';
 import '../../theme/image.dart';
 import '../../theme/txt_style.dart';
+import '../../widget/base_navigation.dart';
 import '../../widget/divider.dart';
 import '../../widget/footer.dart';
 import '../../widget/raised_gradient_button.dart';
 import '../../widget/border_gradient_button.dart';
+import '../detail_sold/detail_sold.dart';
 import 'widget/follow_user.dart';
 import 'widget/hot_bit.dart';
 import 'widget/hot_collection.dart';
@@ -111,7 +114,19 @@ class HomeScreen extends StatelessWidget {
                     size: size,
                   ),
                   SizedBox(height: Dimens.HEIGHT_12),
-                  SoldForWidget(size: size, eth: '2.00'),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const DetailSoldScreen()),
+                      );
+                    },
+                    child: SoldForWidget(
+                      size: size,
+                      eth: '2.00',
+                    ),
+                  ),
                   SizedBox(height: Dimens.HEIGHT_40),
                   CardItemWidget(
                     urlImage: AppImage.rectangle2,
@@ -122,7 +137,19 @@ class HomeScreen extends StatelessWidget {
                     size: size,
                   ),
                   SizedBox(height: Dimens.HEIGHT_12),
-                  SoldForWidget(size: size, eth: '2.00'),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const DetailSoldScreen()),
+                      );
+                    },
+                    child: SoldForWidget(
+                      size: size,
+                      eth: '2.00',
+                    ),
+                  ),
                   SizedBox(height: Dimens.HEIGHT_40),
                   CardItemWidget(
                     urlImage: AppImage.rectangle3,
