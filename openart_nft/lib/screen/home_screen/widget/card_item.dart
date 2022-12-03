@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:openart_nft/screen/home_screen/widget/small_avataruser.dart';
 import 'dart:io';
 
 import '../../../theme/colors.dart';
@@ -105,7 +106,7 @@ class ProductWidget extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  AvatarWidget(url: avatarUrl, status: true),
+                  AvatarUserWidget(url: avatarUrl, status: true),
                   Container(
                     margin: EdgeInsets.only(left: Dimens.PADDING_10),
                     child: Column(
@@ -123,49 +124,6 @@ class ProductWidget extends StatelessWidget {
                 size: Dimens.SIZE_20,
               ),
             ],
-          ),
-        )
-      ],
-    );
-  }
-}
-
-class AvatarWidget extends StatelessWidget {
-  const AvatarWidget({
-    Key? key,
-    required this.url,
-    required this.status,
-  }) : super(key: key);
-  final String url;
-  final bool status;
-
-  @override
-  Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Container(
-          width: 48,
-          height: 48,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(Dimens.RADIUS_100),
-            image: DecorationImage(
-              image: AssetImage(url),
-            ),
-          ),
-        ),
-        Positioned(
-          right: 0,
-          child: Container(
-            height: Dimens.HEIGHT_12,
-            width: Dimens.HEIGHT_12,
-            decoration: BoxDecoration(
-              color: status ? AppColor.successDefault : AppColor.line,
-              border: Border.all(
-                width: Dimens.HEIGHT_1,
-                color: AppColor.white,
-              ),
-              borderRadius: BorderRadius.circular(Dimens.RADIUS_100),
-            ),
           ),
         )
       ],

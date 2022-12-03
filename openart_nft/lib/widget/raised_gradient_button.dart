@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../theme/colors.dart';
-import '../../../theme/dimens.dart';
+import '../theme/colors.dart';
+import '../theme/dimens.dart';
 
 class RaisedGradientButton extends StatelessWidget {
   const RaisedGradientButton({

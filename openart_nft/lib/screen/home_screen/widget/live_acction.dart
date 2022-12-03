@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:openart_nft/screen/home_screen/widget/btn_outline.dart';
 
 import '../../../theme/colors.dart';
 import '../../../theme/dimens.dart';
@@ -39,22 +40,15 @@ class LiveAcctionWidget extends StatelessWidget {
               )
             ],
           ),
-          Container(
-            alignment: Alignment.center,
-            width: Dimens.HEIGHT_118,
-            height: Dimens.HEIGHT_38,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(Dimens.RADIUS_8),
-              border: Border.all(width: 1, color: AppColor.placeholder),
+          BtnOutlineWidget(
+            onPressed: () {},
+            color: AppColor.placeholder,
+            borderRadius: Dimens.RADIUS_8,
+            child: Text(
+              'View all',
+              style: TxtStyleMobile.txt_Medium,
             ),
-            child: InkWell(
-              onTap: () {},
-              child: Text(
-                'View all',
-                style: TxtStyleMobile.txt_Medium,
-              ),
-            ),
-          )
+          ),
         ],
       ),
     );

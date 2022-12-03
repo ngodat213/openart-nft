@@ -38,4 +38,10 @@ class AppColor {
       LinearGradient(colors: [Color(0xff0000F6), Color(0xff9041FF)]);
   static const gradientButton =
       LinearGradient(colors: [Color(0xff0038F5), Color(0xff9F03FF)]);
+
+  static BoxShadow boxShadow = BoxShadow(
+    color: AppColor.placeholder.withOpacity(0.5),
+    offset: Offset(0.0, 1.0), //(x,y)
+    blurRadius: 5.0,
+  );
 }

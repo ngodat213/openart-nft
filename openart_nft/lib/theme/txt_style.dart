@@ -61,6 +61,19 @@ class TxtStyleMobile {
     fontWeight: FontWeight.w400,
   );
 
+  static TextStyle txt_Small2 = GoogleFonts.quicksand(
+    color: AppColor.body,
+    fontSize: Dimens.FONT_SIZE_13,
+    fontWeight: FontWeight.w500,
+    height: 1.5,
+  );
+
+  static TextStyle txt_Small1 = GoogleFonts.quicksand(
+    color: AppColor.inputBg,
+    fontSize: Dimens.FONT_SIZE_14,
+    fontWeight: FontWeight.w400,
+  );
+
   static TextStyle txt_XSmall = GoogleFonts.epilogue(
     color: AppColor.body,
     fontSize: Dimens.FONT_SIZE_13,
@@ -85,6 +98,13 @@ class TxtStyleMobile {
     fontSize: Dimens.FONT_SIZE_DEFAULT,
     fontWeight: FontWeight.w700,
   );
+
+  static TextStyle link_Medium1 = GoogleFonts.epilogue(
+    color: AppColor.bgColor,
+    fontSize: Dimens.FONT_SIZE_DEFAULT,
+    fontWeight: FontWeight.w400,
+  );
+
   static TextStyle link_Small = GoogleFonts.epilogue(
     color: AppColor.body,
     fontSize: Dimens.FONT_SIZE_14,

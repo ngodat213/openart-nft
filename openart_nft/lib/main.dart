@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:openart_nft/widget/text_link.dart';
 
-import 'screen/home_screen/home_screen.dart';
+import 'screen/detail_sold/detail_sold.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomeScreen(),
+      home: DetailSoldScreen(),
     );
   }
 }

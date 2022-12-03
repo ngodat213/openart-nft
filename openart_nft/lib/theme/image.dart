@@ -17,9 +17,14 @@ class AppImage {
   static String icon_Camera = 'res/icons/Camera.png';
   static String icon_External = 'res/icons/External.png';
   static String icon_Menu = 'res/icons/Menu.png';
+  static String icon_Star = 'res/icons/Star.png';
   static String icon_Search = 'res/icons/Search.png';
   static String icon_Microphone = 'res/icons/Microphone.png';
   static String icon_Heart = 'res/icons/Heart.png';
+  static String icon_fire = 'res/icons/FireEmoji.png';
+  static String icon_starBid = 'res/icons/StarEmoji.png';
+  static String icon_ForwardArrow = 'res/icons/Forward Arrow.png';
+  static String icon_Export = 'res/icons/Export.png';
 
   // IMAGE
   static String image1 = 'res/image/image1.png';
@@ -29,5 +34,10 @@ class AppImage {
   static String rectangle3 = 'res/image/Rectangle3.png';
   static String rectangle4 = 'res/image/Rectangle4.png';
   static String rectangle5 = 'res/image/Rectangle5.png';
+  static String rectangle6 = 'res/image/Rectangle6.jpg';
+  static String rectangle7 = 'res/image/Rectangle7.png';
+  static String rectangle8 = 'res/image/Rectangle8.png';
+  static String rectangle9 = 'res/image/Rectangle9.png';
+  static String rectangle10 = 'res/image/Rectangle10.png';
   static String avatarImage = 'res/image/avatarImage.jpg';
 }
