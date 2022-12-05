@@ -90,9 +90,10 @@ class HomeScreen extends StatelessWidget {
                   PriceWidget(eth: 1.5, usd: 2683.73),
                   Center(
                     child: RaisedGradientButton(
+                      title: 'Place a bid',
                       width: size.width - 32,
                       height: Dimens.HEIGHT_56,
-                      title: 'Place a bid',
+                      borderRadius: Dimens.RADIUS_8,
                       onPressed: () {
                         BaseNavigation.push(context,
                             routeName: ManagerRoutes.detail_sold);

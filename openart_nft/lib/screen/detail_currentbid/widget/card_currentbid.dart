@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:openart_nft/screen/detail_currentbid/widget/row_time.dart';
 
 import '../../../theme/colors.dart';
 import '../../../theme/dimens.dart';
 import '../../../theme/txt_style.dart';
 import '../../../widget/btn_raised_gradient.dart';
 
-class CardAuctionWidget extends StatelessWidget {
-  const CardAuctionWidget({
+class CurrentBidWidget extends StatelessWidget {
+  const CurrentBidWidget({
     Key? key,
     required this.size,
   }) : super(key: key);
@@ -25,6 +26,7 @@ class CardAuctionWidget extends StatelessWidget {
           boxShadow: [AppColor.boxShadow],
         ),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
               padding: EdgeInsets.symmetric(
@@ -32,12 +34,12 @@ class CardAuctionWidget extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Reserve Price', style: TxtStyleMobile.txt_Large),
+                  Text('Current Bid', style: TxtStyleMobile.txt_Large),
                   SizedBox(height: Dimens.HEIGHT_4),
                   RichText(
                     text: TextSpan(
                       children: [
-                        TextSpan(text: '1.50 ETH ', style: TxtStyleMobile.h3b),
+                        TextSpan(text: '0.50 ETH ', style: TxtStyleMobile.h3b),
                         TextSpan(
                             text: '\$2,683.73',
                             style: TxtStyleMobile.link_Medium)
@@ -46,9 +48,11 @@ class CardAuctionWidget extends StatelessWidget {
                   ),
                   SizedBox(height: Dimens.HEIGHT_16),
                   Text(
-                    'Once a bid has been placed and the reserve price has been met, a 24 hour auction for this artwork will begin.',
-                    style: TxtStyleMobile.txt_Medium(color: AppColor.label),
+                    'Auction ending in',
+                    style: TxtStyleMobile.txt_Large,
                   ),
+                  SizedBox(height: Dimens.HEIGHT_4),
+                  RowTimeWidget(hour: 12, minute: 30, second: 25),
                 ],
               ),
             ),

@@ -22,56 +22,46 @@ class CardActivitySoldWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.all(Dimens.PADDING_16),
       margin: EdgeInsets.only(
         left: Dimens.PADDING_16,
         right: Dimens.PADDING_16,
-        top: Dimens.PADDING_13,
-      ),
-      padding: EdgeInsets.fromLTRB(
-        Dimens.PADDING_13,
-        Dimens.PADDING_13,
-        Dimens.PADDING_20,
-        Dimens.PADDING_13,
       ),
       decoration: BoxDecoration(
         color: AppColor.offWhite,
         borderRadius: BorderRadius.circular(Dimens.RADIUS_24),
       ),
-      child: Column(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
             children: [
-              AvatarUserWidget(
-                url: avatarUrl,
-                status: true,
-              ),
               Container(
+                width: Dimens.HEIGHT_48,
+                height: Dimens.HEIGHT_48,
                 margin: EdgeInsets.only(
-                  left: Dimens.PADDING_13,
-                  right: Dimens.PADDING_75,
+                  right: Dimens.PADDING_13,
+                  bottom: Dimens.PADDING_16,
                 ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      title,
-                      style: TxtStyleMobile.link_XSmall,
-                    ),
-                    Text(
-                      daytime,
-                      style: TxtStyleMobile.txt_Small,
-                    )
-                  ],
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(Dimens.RADIUS_100),
+                  image: DecorationImage(
+                    image: AssetImage(AppImage.avatarImage),
+                  ),
                 ),
               ),
-              Image.asset(AppImage.icon_External),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(title, style: TxtStyleMobile.link_XSmall),
+                  Text(daytime, style: TxtStyleMobile.txt_Small),
+                  result
+                ],
+              ),
             ],
           ),
-          Container(
-            margin: EdgeInsets.only(left: Dimens.PADDING_60),
-            child: result,
-          )
+          Image.asset(AppImage.icon_External),
         ],
       ),
     );

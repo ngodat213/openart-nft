@@ -6,9 +6,8 @@ import '../../theme/txt_style.dart';
 import '../../widget/footer.dart';
 import '../../widget/header.dart';
 import '../../widget/nft_detail.dart';
-import '../detail_sold/detail_sold.dart';
-import '../detail_sold/widget/view_on.dart';
-import 'widget/card_activity.dart';
+import '../../widget/view_on.dart';
+import '../../widget/card_activity.dart';
 import 'widget/card_auction.dart';
 
 class DetailAuctionScreen extends StatelessWidget {
@@ -87,17 +86,35 @@ class DetailAuctionScreen extends StatelessWidget {
               ),
               SizedBox(height: Dimens.HEIGHT_24),
               CardActivityWidget(
+                avatarUrl: AppImage.avatarImage,
                 title: 'Bid place by @pawel09',
                 daytime: 'June 06, 2021 at 12:00am',
-                eth: '1.50',
-                total: '2,683.73',
+                widget: RichText(
+                  text: TextSpan(
+                    children: [
+                      TextSpan(
+                          text: '1.50 ETH ', style: TxtStyleMobile.link_Medium),
+                      TextSpan(
+                          text: '\$2,683.73', style: TxtStyleMobile.txt_Small)
+                    ],
+                  ),
+                ),
               ),
               SizedBox(height: Dimens.HEIGHT_12),
               CardActivityWidget(
+                avatarUrl: AppImage.avatarImage,
                 title: 'Listing by @han152',
                 daytime: 'June 04, 2021 at 12:00am',
-                eth: '1.00',
-                total: '2,683.73',
+                widget: RichText(
+                  text: TextSpan(
+                    children: [
+                      TextSpan(
+                          text: '1.50 ETH ', style: TxtStyleMobile.link_Medium),
+                      TextSpan(
+                          text: '\$2,683.73', style: TxtStyleMobile.txt_Small)
+                    ],
+                  ),
+                ),
               ),
               FooterWidget(size: size, top: 44)
             ],

@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
 
-import '../../../theme/colors.dart';
-import '../../../theme/dimens.dart';
-import '../../../theme/image.dart';
-import '../../../theme/txt_style.dart';
+import '../theme/colors.dart';
+import '../theme/dimens.dart';
+import '../theme/image.dart';
+import '../theme/txt_style.dart';
 
 class CardActivityWidget extends StatelessWidget {
   const CardActivityWidget({
     Key? key,
     required this.title,
     required this.daytime,
-    required this.eth,
-    required this.total,
+    required this.widget,
+    required this.avatarUrl,
   }) : super(key: key);
+  final String avatarUrl;
   final String title;
   final String daytime;
-  final String eth;
-  final String total;
+  final Widget widget;
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +45,7 @@ class CardActivityWidget extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(Dimens.RADIUS_100),
                   image: DecorationImage(
-                    image: AssetImage(AppImage.avatarImage),
+                    image: AssetImage(avatarUrl),
                   ),
                 ),
               ),
@@ -55,17 +55,7 @@ class CardActivityWidget extends StatelessWidget {
                   Text(title, style: TxtStyleMobile.link_XSmall),
                   Text(daytime, style: TxtStyleMobile.txt_Small2),
                   SizedBox(height: Dimens.HEIGHT_12),
-                  RichText(
-                    text: TextSpan(
-                      children: [
-                        TextSpan(
-                            text: eth + ' ETH ',
-                            style: TxtStyleMobile.link_Medium),
-                        TextSpan(
-                            text: '\$' + total, style: TxtStyleMobile.txt_Small)
-                      ],
-                    ),
-                  )
+                  widget
                 ],
               ),
             ],

@@ -24,10 +24,11 @@ class FooterWidget extends StatelessWidget {
         TextLogoWidget(top: top, size: size),
         SizedBox(height: Dimens.HEIGHT_30),
         RaisedGradientButton(
+          title: 'Earn now',
           width: size.width - 32,
           height: Dimens.HEIGHT_56,
+          borderRadius: Dimens.RADIUS_8,
           onPressed: () {},
-          title: 'Earn now',
         ),
         SizedBox(height: Dimens.HEIGHT_16),
         BorderGradinetButton(

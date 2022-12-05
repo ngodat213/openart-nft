@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../../theme/colors.dart';
-import '../../../theme/dimens.dart';
-import '../../../theme/txt_style.dart';
+import '../theme/colors.dart';
+import '../theme/dimens.dart';
+import '../theme/txt_style.dart';
 
 class ViewOnWidget extends StatelessWidget {
   const ViewOnWidget({

@@ -14,6 +14,7 @@ class Dimens {
   static const HEIGHT_56 = 56.0;
   static const HEIGHT_48 = 48.0;
   static const HEIGHT_46 = 46.0;
+  static const HEIGHT_42 = 42.0;
   static const HEIGHT_40 = 40.0;
   static const HEIGHT_38 = 38.0;
   static const HEIGHT_30 = 30.0;
@@ -46,6 +47,7 @@ class Dimens {
   static const RADIUS_51 = 51.0;
   static const RADIUS_34 = 34.0;
   static const RADIUS_32 = 32.0;
+  static const RADIUS_30 = 30.0;
   static const RADIUS_28 = 28.0;
   static const RADIUS_24 = 24.0;
   static const RADIUS_16 = 16.0;

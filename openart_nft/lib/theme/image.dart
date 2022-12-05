@@ -39,5 +39,8 @@ class AppImage {
   static String rectangle8 = 'res/image/Rectangle8.png';
   static String rectangle9 = 'res/image/Rectangle9.png';
   static String rectangle10 = 'res/image/Rectangle10.png';
+  static String wallpaper = 'res/image/wallpaper.jpg';
+  static String wallpaper1 = 'res/image/wallpaper1.jpg';
+  static String occho = 'res/image/Occho.jpg';
   static String avatarImage = 'res/image/avatarImage.jpg';
 }

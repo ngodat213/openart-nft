@@ -4,14 +4,12 @@ import '../../theme/colors.dart';
 import '../../theme/dimens.dart';
 import '../../theme/txt_style.dart';
 import '../../theme/image.dart';
-import '../../widget/btn_avatar_user.dart';
+import '../../widget/card_activity.dart';
 import '../../widget/footer.dart';
 import '../../widget/header.dart';
 import '../../widget/nft_detail.dart';
-import '../home_screen/widget/small_avataruser.dart';
-import 'widget/card_activity_sold.dart';
+import '../../widget/view_on.dart';
 import 'widget/card_sold.dart';
-import 'widget/view_on.dart';
 
 class DetailSoldScreen extends StatelessWidget {
   const DetailSoldScreen({super.key});
@@ -89,31 +87,31 @@ class DetailSoldScreen extends StatelessWidget {
                   style: TxtStyleMobile.txt_Large,
                 ),
               ),
-              CardActivitySoldWidget(
+              CardActivityWidget(
                 avatarUrl: AppImage.avatarImage,
                 title: 'Auction won by David',
                 daytime: 'June 04, 2021 at 12:00am',
-                result: Text(
+                widget: Text(
                   'Sold for 1.50 ETH',
                   style: TxtStyleMobile.link_Medium,
                 ),
               ),
-              CardActivitySoldWidget(
+              CardActivityWidget(
                 avatarUrl: AppImage.avatarImage,
                 title: 'Bid place by @pawel09',
                 daytime: 'June 06, 2021 at 12:00am',
-                result: RichText(
+                widget: RichText(
                     text: TextSpan(children: [
                   TextSpan(
                       text: '1.50 ETH ', style: TxtStyleMobile.link_Medium),
                   TextSpan(text: '\$2,683.73', style: TxtStyleMobile.txt_Small)
                 ])),
               ),
-              CardActivitySoldWidget(
+              CardActivityWidget(
                 avatarUrl: AppImage.avatarImage,
                 title: 'Auction won by David',
                 daytime: 'June 04, 2021 at 12:00am',
-                result: RichText(
+                widget: RichText(
                     text: TextSpan(children: [
                   TextSpan(text: '1.00 ETH', style: TxtStyleMobile.link_Medium),
                   TextSpan(text: '\$2,683.73', style: TxtStyleMobile.txt_Small)

@@ -51,7 +51,7 @@ class TxtStyleMobile {
 
   static TextStyle txt_Medium({Color color = AppColor.body}) {
     return GoogleFonts.epilogue(
-      color: AppColor.body,
+      color: color,
       fontSize: Dimens.FONT_SIZE_DEFAULT,
       fontWeight: FontWeight.w400,
     );

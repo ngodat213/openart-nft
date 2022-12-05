@@ -1,23 +1,27 @@
 import 'package:flutter/material.dart';
 
 import '../theme/colors.dart';
-import '../theme/dimens.dart';
 import '../theme/txt_style.dart';
 
-class RaisedGradientButton extends StatelessWidget {
-  const RaisedGradientButton({
+class ElevatedButtonWidget extends StatelessWidget {
+  const ElevatedButtonWidget({
     Key? key,
-    required this.title,
-    required this.onPressed,
-    required this.height,
     required this.width,
+    required this.height,
+    required this.onPressed,
+    required this.title,
+    required this.color,
+    required this.textColor,
     required this.borderRadius,
   }) : super(key: key);
-  final String title;
+
   final double width;
   final double height;
-  final double borderRadius;
   final Function onPressed;
+  final String title;
+  final Color color;
+  final Color textColor;
+  final double borderRadius;
 
   @override
   Widget build(BuildContext context) {
@@ -31,13 +35,13 @@ class RaisedGradientButton extends StatelessWidget {
         width: width,
         height: height,
         decoration: BoxDecoration(
-          gradient: AppColor.gradientButton,
+          color: color,
           borderRadius: BorderRadius.circular(borderRadius),
         ),
         child: Center(
           child: Text(
             title,
-            style: TxtStyleMobile.txt_Medium(color: AppColor.offWhite),
+            style: TxtStyleMobile.txt_Medium(color: textColor),
           ),
         ),
       ),

@@ -1,0 +1,143 @@
+import 'package:flutter/material.dart';
+import 'package:openart_nft/widget/btn_border_gradient.dart';
+
+import '../../theme/colors.dart';
+import '../../theme/dimens.dart';
+import '../../theme/image.dart';
+import '../../theme/txt_style.dart';
+import '../../widget/btn_raised_gradient.dart';
+import '../../widget/elevated_button.dart';
+import '../../widget/footer.dart';
+import '../../widget/header.dart';
+import 'widget/card_creator.dart';
+
+class DiscoverCreatorScreen extends StatelessWidget {
+  const DiscoverCreatorScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final Size size = MediaQuery.of(context).size;
+    return Scaffold(
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              HeaderWidget(
+                margin: EdgeInsets.fromLTRB(
+                  Dimens.PADDING_16,
+                  Dimens.PADDING_6,
+                  Dimens.PADDING_16,
+                  Dimens.PADDING_16,
+                ),
+              ),
+              Center(
+                child: Text(
+                  'Discover creator',
+                  style: TxtStyleMobile.link_Large2,
+                ),
+              ),
+              SizedBox(height: Dimens.HEIGHT_16),
+              Center(
+                child: Text(
+                  textAlign: TextAlign.center,
+                  'Follow at least five creators\nto build your feed…',
+                  style: TxtStyleMobile.txt_Medium(color: AppColor.label),
+                ),
+              ),
+              SizedBox(height: Dimens.HEIGHT_40),
+              Row(
+                children: [
+                  RaisedGradientButton(
+                    title: 'Feature Creatior',
+                    height: Dimens.HEIGHT_42,
+                    borderRadius: Dimens.RADIUS_30,
+                    width: size.width / 2.5,
+                    onPressed: () {},
+                  ),
+                  ElevatedButtonWidget(
+                    title: 'All Creator',
+                    height: Dimens.HEIGHT_42,
+                    width: size.width / 3.3,
+                    color: AppColor.offWhite,
+                    textColor: AppColor.body,
+                    borderRadius: Dimens.RADIUS_30,
+                    onPressed: () {},
+                  ),
+                ],
+              ),
+              CardCreatorWidget(
+                size: size,
+                fullName: 'Ngô Văn Tiến Đạt',
+                introduce:
+                    'Kennedy Yanko is an artist working in found metal and paint skin. Her methods reflect a dual abstract expressionist-surr…',
+                follow: 2024,
+                avatarUrl: AppImage.avatarImage,
+                wallpaper: AppImage.wallpaper,
+                margin: EdgeInsets.only(
+                  left: Dimens.PADDING_16,
+                  right: Dimens.PADDING_16,
+                  top: Dimens.PADDING_40,
+                ),
+              ),
+              CardCreatorWidget(
+                size: size,
+                fullName: 'Ngô Văn Tiến Đạt',
+                introduce:
+                    'Kennedy Yanko is an artist working in found metal and paint skin. Her methods reflect a dual abstract expressionist-surr…',
+                follow: 2024,
+                avatarUrl: AppImage.avatarImage,
+                wallpaper: AppImage.wallpaper,
+                margin: EdgeInsets.only(
+                  left: Dimens.PADDING_16,
+                  right: Dimens.PADDING_16,
+                  top: Dimens.PADDING_40,
+                ),
+              ),
+              CardCreatorWidget(
+                size: size,
+                fullName: 'Ngô Văn Tiến Đạt',
+                introduce:
+                    'Kennedy Yanko is an artist working in found metal and paint skin. Her methods reflect a dual abstract expressionist-surr…',
+                follow: 2024,
+                avatarUrl: AppImage.avatarImage,
+                wallpaper: AppImage.wallpaper,
+                margin: EdgeInsets.only(
+                  left: Dimens.PADDING_16,
+                  right: Dimens.PADDING_16,
+                  top: Dimens.PADDING_40,
+                ),
+              ),
+              CardCreatorWidget(
+                size: size,
+                fullName: 'Ngô Văn Tiến Đạt',
+                introduce:
+                    'Kennedy Yanko is an artist working in found metal and paint skin. Her methods reflect a dual abstract expressionist-surr…',
+                follow: 2024,
+                avatarUrl: AppImage.avatarImage,
+                wallpaper: AppImage.wallpaper,
+                margin: EdgeInsets.only(
+                  left: Dimens.PADDING_16,
+                  right: Dimens.PADDING_16,
+                  top: Dimens.PADDING_40,
+                  bottom: Dimens.PADDING_40,
+                ),
+              ),
+              Center(
+                child: BorderGradinetButton(
+                  size: size,
+                  title: 'Load more',
+                  onPressed: () {},
+                ),
+              ),
+              FooterWidget(
+                size: size,
+                top: Dimens.HEIGHT_110,
+              )
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
