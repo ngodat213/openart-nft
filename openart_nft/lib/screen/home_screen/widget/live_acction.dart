@@ -46,7 +46,7 @@ class LiveAcctionWidget extends StatelessWidget {
             borderRadius: Dimens.RADIUS_8,
             child: Text(
               'View all',
-              style: TxtStyleMobile.txt_Medium,
+              style: TxtStyleMobile.txt_Medium(),
             ),
           ),
         ],

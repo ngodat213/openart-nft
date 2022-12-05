@@ -4,39 +4,36 @@ import '../theme/colors.dart';
 import '../theme/dimens.dart';
 import '../theme/image.dart';
 import '../theme/txt_style.dart';
-import 'border_gradient_button.dart';
+import 'btn_border_gradient.dart';
 import 'divider.dart';
-import 'raised_gradient_button.dart';
+import 'btn_raised_gradient.dart';
 
 class FooterWidget extends StatelessWidget {
   const FooterWidget({
     Key? key,
     required this.size,
+    required this.top,
   }) : super(key: key);
+  final double top;
   final Size size;
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        TextLogoWidget(size: size),
+        TextLogoWidget(top: top, size: size),
         SizedBox(height: Dimens.HEIGHT_30),
         RaisedGradientButton(
-          size: size,
+          width: size.width - 32,
+          height: Dimens.HEIGHT_56,
           onPressed: () {},
-          child: Text(
-            'Earn now',
-            style: TxtStyleMobile.link_Large1,
-          ),
+          title: 'Earn now',
         ),
         SizedBox(height: Dimens.HEIGHT_16),
         BorderGradinetButton(
           size: size,
           onPressed: () {},
-          child: Text(
-            'Discover more',
-            style: TxtStyleMobile.link_Large2,
-          ),
+          title: 'Discover more',
         ),
         Container(
           margin: EdgeInsets.only(top: Dimens.PADDING_89),
@@ -138,8 +135,10 @@ class TextLogoWidget extends StatelessWidget {
   const TextLogoWidget({
     Key? key,
     required this.size,
+    required this.top,
   }) : super(key: key);
   final Size size;
+  final double top;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -147,7 +146,7 @@ class TextLogoWidget extends StatelessWidget {
       children: [
         Container(
           alignment: Alignment.center,
-          margin: EdgeInsets.only(top: Dimens.HEIGHT_110),
+          margin: EdgeInsets.only(top: top),
           child: Image.asset(
             AppImage.logo,
             height: Dimens.HEIGHT_46,

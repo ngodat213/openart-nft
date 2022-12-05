@@ -49,11 +49,13 @@ class TxtStyleMobile {
     fontWeight: FontWeight.w400,
   );
 
-  static TextStyle txt_Medium = GoogleFonts.epilogue(
-    color: AppColor.body,
-    fontSize: Dimens.FONT_SIZE_DEFAULT,
-    fontWeight: FontWeight.w400,
-  );
+  static TextStyle txt_Medium({Color color = AppColor.body}) {
+    return GoogleFonts.epilogue(
+      color: AppColor.body,
+      fontSize: Dimens.FONT_SIZE_DEFAULT,
+      fontWeight: FontWeight.w400,
+    );
+  }
 
   static TextStyle txt_Small = GoogleFonts.quicksand(
     color: AppColor.body,

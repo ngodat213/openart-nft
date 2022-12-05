@@ -47,7 +47,7 @@ class FollowUserWidget extends StatelessWidget {
                 padding: const EdgeInsets.all(Dimens.PADDING_7),
                 child: Text(
                   'Follow',
-                  style: TxtStyleMobile.txt_Medium,
+                  style: TxtStyleMobile.txt_Medium(),
                 ),
               )
             ]),

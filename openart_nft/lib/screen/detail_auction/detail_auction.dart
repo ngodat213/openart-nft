@@ -1,28 +1,25 @@
 import 'package:flutter/material.dart';
 
-import '../../theme/colors.dart';
 import '../../theme/dimens.dart';
-import '../../theme/txt_style.dart';
 import '../../theme/image.dart';
-import '../../widget/btn_avatar_user.dart';
+import '../../theme/txt_style.dart';
 import '../../widget/footer.dart';
 import '../../widget/header.dart';
 import '../../widget/nft_detail.dart';
-import '../home_screen/widget/small_avataruser.dart';
-import 'widget/card_activity_sold.dart';
-import 'widget/card_sold.dart';
-import 'widget/view_on.dart';
+import '../detail_sold/detail_sold.dart';
+import '../detail_sold/widget/view_on.dart';
+import 'widget/card_activity.dart';
+import 'widget/card_auction.dart';
 
-class DetailSoldScreen extends StatelessWidget {
-  const DetailSoldScreen({super.key});
+class DetailAuctionScreen extends StatelessWidget {
+  const DetailAuctionScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: AppColor.bgColor,
-      body: SingleChildScrollView(
-        child: SafeArea(
+      body: SafeArea(
+        child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -77,49 +74,32 @@ class DetailSoldScreen extends StatelessWidget {
                   bottom: Dimens.PADDING_16,
                 ),
               ),
-              CardSoldWidget(size: size),
+              CardAuctionWidget(size: size),
               Container(
-                margin: EdgeInsets.only(
+                padding: EdgeInsets.only(
                   left: Dimens.PADDING_16,
-                  top: Dimens.PADDING_24,
-                  bottom: Dimens.PADDING_24,
+                  top: Dimens.PADDING_40,
                 ),
                 child: Text(
                   'Activity',
                   style: TxtStyleMobile.txt_Large,
                 ),
               ),
-              CardActivitySoldWidget(
-                avatarUrl: AppImage.avatarImage,
-                title: 'Auction won by David',
-                daytime: 'June 04, 2021 at 12:00am',
-                result: Text(
-                  'Sold for 1.50 ETH',
-                  style: TxtStyleMobile.link_Medium,
-                ),
-              ),
-              CardActivitySoldWidget(
-                avatarUrl: AppImage.avatarImage,
+              SizedBox(height: Dimens.HEIGHT_24),
+              CardActivityWidget(
                 title: 'Bid place by @pawel09',
                 daytime: 'June 06, 2021 at 12:00am',
-                result: RichText(
-                    text: TextSpan(children: [
-                  TextSpan(
-                      text: '1.50 ETH ', style: TxtStyleMobile.link_Medium),
-                  TextSpan(text: '\$2,683.73', style: TxtStyleMobile.txt_Small)
-                ])),
+                eth: '1.50',
+                total: '2,683.73',
               ),
-              CardActivitySoldWidget(
-                avatarUrl: AppImage.avatarImage,
-                title: 'Auction won by David',
+              SizedBox(height: Dimens.HEIGHT_12),
+              CardActivityWidget(
+                title: 'Listing by @han152',
                 daytime: 'June 04, 2021 at 12:00am',
-                result: RichText(
-                    text: TextSpan(children: [
-                  TextSpan(text: '1.00 ETH', style: TxtStyleMobile.link_Medium),
-                  TextSpan(text: '\$2,683.73', style: TxtStyleMobile.txt_Small)
-                ])),
+                eth: '1.00',
+                total: '2,683.73',
               ),
-              FooterWidget(size: size, top: Dimens.HEIGHT_56),
+              FooterWidget(size: size, top: 44)
             ],
           ),
         ),

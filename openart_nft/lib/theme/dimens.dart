@@ -8,9 +8,11 @@ class Dimens {
   static const HEIGHT_150 = 150.0;
   static const HEIGHT_118 = 118.0;
   static const HEIGHT_110 = 110.0;
+  static const HEIGHT_84 = 84.0;
   static const HEIGHT_66 = 66.0;
   static const HEIGHT_64 = 64.0;
   static const HEIGHT_56 = 56.0;
+  static const HEIGHT_48 = 48.0;
   static const HEIGHT_46 = 46.0;
   static const HEIGHT_40 = 40.0;
   static const HEIGHT_38 = 38.0;
@@ -18,6 +20,7 @@ class Dimens {
   static const HEIGHT_24 = 24.0;
   static const HEIGHT_16 = 16.0;
   static const HEIGHT_12 = 12.0;
+  static const HEIGHT_4 = 4.0;
   static const HEIGHT_1 = 1.0;
 
 // PADDING

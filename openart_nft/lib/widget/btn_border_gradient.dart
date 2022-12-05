@@ -2,22 +2,28 @@ import 'package:flutter/material.dart';
 
 import '../theme/colors.dart';
 import '../theme/dimens.dart';
+import '../theme/txt_style.dart';
 
 class BorderGradinetButton extends StatelessWidget {
   const BorderGradinetButton({
     Key? key,
     required this.size,
-    required this.child,
+    required this.title,
     required this.onPressed,
   }) : super(key: key);
 
-  final Widget child;
+  final String title;
   final Function onPressed;
   final Size size;
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return ElevatedButton(
+      onPressed: () => onPressed.call(),
+      style: ButtonStyle(
+        backgroundColor: MaterialStatePropertyAll<Color>(AppColor.bgColor),
+        elevation: MaterialStateProperty.all(0),
+      ),
       child: Container(
         width: size.width - 33,
         height: Dimens.HEIGHT_56,
@@ -35,10 +41,8 @@ class BorderGradinetButton extends StatelessWidget {
               border: Border.all(color: Colors.white),
               borderRadius: BorderRadius.circular(Dimens.RADIUS_8),
             ),
-            child: InkWell(
-              onTap: onPressed.call(),
-              child: Center(child: child),
-            ),
+            child:
+                Center(child: Text(title, style: TxtStyleMobile.link_Large2)),
           ),
         ),
       ),

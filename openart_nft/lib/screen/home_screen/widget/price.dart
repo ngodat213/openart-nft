@@ -25,7 +25,7 @@ class PriceWidget extends StatelessWidget {
           children: [
             TextSpan(
               text: 'Reserve Price ',
-              style: TxtStyleMobile.txt_Medium,
+              style: TxtStyleMobile.txt_Medium(),
             ),
             TextSpan(
               text: eth.toString() + ' ETH ',

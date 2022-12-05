@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'manager/manager_routes.dart';
 import 'screen/home_screen/home_screen.dart';
+import 'theme/colors.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,13 +11,11 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        scaffoldBackgroundColor: AppColor.bgColor,
       ),
       home: HomeScreen(),
       routes: ManagerRoutes.manager,

@@ -4,20 +4,28 @@ import '../../../theme/colors.dart';
 import '../../../theme/dimens.dart';
 import '../../../theme/txt_style.dart';
 
-class CurrentBidWidget extends StatelessWidget {
-  const CurrentBidWidget({
+class CurrentBidButtonWidget extends StatelessWidget {
+  const CurrentBidButtonWidget({
     Key? key,
     required this.size,
     required this.current,
     required this.timeEnding,
+    required this.onPressed,
   }) : super(key: key);
+
+  final Size size;
   final String current;
   final String timeEnding;
-  final Size size;
+  final Function onPressed;
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return ElevatedButton(
+      onPressed: () => onPressed.call(),
+      style: ButtonStyle(
+        backgroundColor: MaterialStatePropertyAll<Color>(AppColor.bgColor),
+        elevation: MaterialStateProperty.all(0),
+      ),
       child: Container(
         width: size.width - 32,
         height: Dimens.HEIGHT_64,
@@ -46,8 +54,8 @@ class CurrentBidWidget extends StatelessWidget {
                       padding: const EdgeInsets.only(
                         left: Dimens.PADDING_4,
                       ),
-                      child:
-                          Text('Current bid', style: TxtStyleMobile.txt_Medium),
+                      child: Text('Current bid',
+                          style: TxtStyleMobile.txt_Medium()),
                     )
                   ],
                 ),
@@ -56,7 +64,7 @@ class CurrentBidWidget extends StatelessWidget {
             ),
             Column(
               children: [
-                Text('Ending in', style: TxtStyleMobile.txt_Medium),
+                Text('Ending in', style: TxtStyleMobile.txt_Medium()),
                 Text(timeEnding, style: TxtStyleMobile.link_Large2)
               ],
             )

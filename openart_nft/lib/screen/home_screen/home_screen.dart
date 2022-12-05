@@ -8,8 +8,9 @@ import '../../theme/txt_style.dart';
 import '../../widget/base_navigation.dart';
 import '../../widget/divider.dart';
 import '../../widget/footer.dart';
-import '../../widget/raised_gradient_button.dart';
-import '../../widget/border_gradient_button.dart';
+import '../../widget/btn_raised_gradient.dart';
+import '../../widget/btn_border_gradient.dart';
+import '../detail_auction/detail_auction.dart';
 import '../detail_sold/detail_sold.dart';
 import 'widget/follow_user.dart';
 import 'widget/hot_bit.dart';
@@ -87,21 +88,26 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                   PriceWidget(eth: 1.5, usd: 2683.73),
-                  RaisedGradientButton(
-                    size: size,
-                    onPressed: () {},
-                    child: Text(
-                      'Place a bid',
-                      style: TxtStyleMobile.link_Large1,
+                  Center(
+                    child: RaisedGradientButton(
+                      width: size.width - 32,
+                      height: Dimens.HEIGHT_56,
+                      title: 'Place a bid',
+                      onPressed: () {
+                        BaseNavigation.push(context,
+                            routeName: ManagerRoutes.detail_sold);
+                      },
                     ),
                   ),
                   SizedBox(height: 20),
-                  BorderGradinetButton(
-                    size: size,
-                    onPressed: () {},
-                    child: Text(
-                      'View artwork',
-                      style: TxtStyleMobile.link_Large2,
+                  Center(
+                    child: BorderGradinetButton(
+                      size: size,
+                      title: 'View artwork',
+                      onPressed: () {
+                        BaseNavigation.push(context,
+                            routeName: ManagerRoutes.detail_sold);
+                      },
                     ),
                   ),
                   LiveAcctionWidget(),
@@ -114,18 +120,13 @@ class HomeScreen extends StatelessWidget {
                     size: size,
                   ),
                   SizedBox(height: Dimens.HEIGHT_12),
-                  InkWell(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const DetailSoldScreen()),
-                      );
+                  SoldForButtonWidget(
+                    size: size,
+                    eth: '2.00',
+                    onPressed: () {
+                      BaseNavigation.push(context,
+                          routeName: ManagerRoutes.detail_sold);
                     },
-                    child: SoldForWidget(
-                      size: size,
-                      eth: '2.00',
-                    ),
                   ),
                   SizedBox(height: Dimens.HEIGHT_40),
                   CardItemWidget(
@@ -137,18 +138,13 @@ class HomeScreen extends StatelessWidget {
                     size: size,
                   ),
                   SizedBox(height: Dimens.HEIGHT_12),
-                  InkWell(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const DetailSoldScreen()),
-                      );
+                  SoldForButtonWidget(
+                    size: size,
+                    eth: '2.00',
+                    onPressed: () {
+                      BaseNavigation.push(context,
+                          routeName: ManagerRoutes.detail_sold);
                     },
-                    child: SoldForWidget(
-                      size: size,
-                      eth: '2.00',
-                    ),
                   ),
                   SizedBox(height: Dimens.HEIGHT_40),
                   CardItemWidget(
@@ -160,10 +156,14 @@ class HomeScreen extends StatelessWidget {
                     size: size,
                   ),
                   SizedBox(height: Dimens.HEIGHT_12),
-                  CurrentBidWidget(
+                  CurrentBidButtonWidget(
                     size: size,
                     current: '2.00',
                     timeEnding: '27m 30s',
+                    onPressed: () {
+                      BaseNavigation.push(context,
+                          routeName: ManagerRoutes.detail_auction);
+                    },
                   ),
                   SizedBox(height: Dimens.HEIGHT_40),
                   CardItemWidget(
@@ -175,10 +175,14 @@ class HomeScreen extends StatelessWidget {
                     size: size,
                   ),
                   SizedBox(height: Dimens.HEIGHT_12),
-                  CurrentBidWidget(
+                  CurrentBidButtonWidget(
                     size: size,
                     current: '2.00',
                     timeEnding: '27m 30s',
+                    onPressed: () {
+                      BaseNavigation.push(context,
+                          routeName: ManagerRoutes.detail_auction);
+                    },
                   ),
                   HotBidWidget(),
                   ListHotbidWidget(images: images),
@@ -201,17 +205,14 @@ class HomeScreen extends StatelessWidget {
                   BorderGradinetButton(
                     size: size,
                     onPressed: () {},
-                    child: Text(
-                      'View more collection',
-                      style: TxtStyleMobile.link_Large2,
-                    ),
+                    title: 'View more collection',
                   ),
                   DividerWidget(
                     color: AppColor.placeholder,
                     width: size.width - 48,
                     margin: EdgeInsets.only(top: Dimens.PADDING_24),
                   ),
-                  FooterWidget(size: size),
+                  FooterWidget(size: size, top: Dimens.HEIGHT_84),
                 ],
               ),
             ],
