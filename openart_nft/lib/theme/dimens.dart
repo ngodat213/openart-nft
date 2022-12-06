@@ -6,6 +6,7 @@ class Dimens {
   static const HEIGHT_177 = 177.0;
   static const HEIGHT_165 = 165.0;
   static const HEIGHT_150 = 150.0;
+  static const HEIGHT_130 = 130.0;
   static const HEIGHT_118 = 118.0;
   static const HEIGHT_110 = 110.0;
   static const HEIGHT_84 = 84.0;
@@ -20,6 +21,7 @@ class Dimens {
   static const HEIGHT_30 = 30.0;
   static const HEIGHT_24 = 24.0;
   static const HEIGHT_16 = 16.0;
+  static const HEIGHT_14 = 14.0;
   static const HEIGHT_12 = 12.0;
   static const HEIGHT_4 = 4.0;
   static const HEIGHT_1 = 1.0;

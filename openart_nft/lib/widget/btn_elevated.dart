@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../theme/colors.dart';
-import '../theme/txt_style.dart';
 
 class ElevatedButtonWidget extends StatelessWidget {
   const ElevatedButtonWidget({
@@ -9,19 +8,17 @@ class ElevatedButtonWidget extends StatelessWidget {
     required this.width,
     required this.height,
     required this.onPressed,
-    required this.title,
     required this.color,
-    required this.textColor,
     required this.borderRadius,
+    required this.child,
   }) : super(key: key);
 
   final double width;
   final double height;
   final Function onPressed;
-  final String title;
   final Color color;
-  final Color textColor;
   final double borderRadius;
+  final Widget child;
 
   @override
   Widget build(BuildContext context) {
@@ -38,12 +35,7 @@ class ElevatedButtonWidget extends StatelessWidget {
           color: color,
           borderRadius: BorderRadius.circular(borderRadius),
         ),
-        child: Center(
-          child: Text(
-            title,
-            style: TxtStyleMobile.txt_Medium(color: textColor),
-          ),
-        ),
+        child: Center(child: child),
       ),
     );
   }

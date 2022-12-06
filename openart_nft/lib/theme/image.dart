@@ -5,7 +5,7 @@ class AppImage {
 
   static String icon_AlertInfo = 'res/icons/Alert-info.png';
   static String icon_AtSign = 'res/icons/At-sign.png';
-  static String icon_Attack = 'res/icons/Attack.png';
+  static String icon_Attach = 'res/icons/Attach.png';
   static String icon_BackArrow = 'res/icons/Back Arrow.png';
   static String icon_Back = 'res/icons/Back.png';
   static String icon_Backspace = 'res/icons/Backspace.png';
@@ -25,7 +25,8 @@ class AppImage {
   static String icon_starBid = 'res/icons/StarEmoji.png';
   static String icon_ForwardArrow = 'res/icons/Forward Arrow.png';
   static String icon_Export = 'res/icons/Export.png';
-
+  static String icon_Copy = 'res/icons/Copy.png';
+  static String icon_link = 'res/icons/Link.png';
   // IMAGE
   static String image1 = 'res/image/image1.png';
   static String rectangle = 'res/image/Rectangle.png';
@@ -40,7 +41,5 @@ class AppImage {
   static String rectangle9 = 'res/image/Rectangle9.png';
   static String rectangle10 = 'res/image/Rectangle10.png';
   static String wallpaper = 'res/image/wallpaper.jpg';
-  static String wallpaper1 = 'res/image/wallpaper1.jpg';
-  static String occho = 'res/image/Occho.jpg';
   static String avatarImage = 'res/image/avatarImage.jpg';
 }

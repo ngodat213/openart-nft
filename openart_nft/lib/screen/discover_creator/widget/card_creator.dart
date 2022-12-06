@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../theme/colors.dart';
 import '../../../theme/dimens.dart';
 import '../../../theme/txt_style.dart';
-import '../../../widget/elevated_button.dart';
+import '../../../widget/btn_elevated.dart';
 
 class CardCreatorWidget extends StatelessWidget {
   const CardCreatorWidget({
@@ -113,8 +113,9 @@ class CardCreatorWidget extends StatelessWidget {
                         height: 40,
                         onPressed: () {},
                         borderRadius: Dimens.RADIUS_8,
-                        title: 'Follow',
-                        textColor: AppColor.body,
+                        child: Text('Follow',
+                            style: TxtStyleMobile.txt_Medium(
+                                color: AppColor.body)),
                       )
                     ],
                   ),

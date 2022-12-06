@@ -6,7 +6,7 @@ import '../../theme/dimens.dart';
 import '../../theme/image.dart';
 import '../../theme/txt_style.dart';
 import '../../widget/btn_raised_gradient.dart';
-import '../../widget/elevated_button.dart';
+import '../../widget/btn_elevated.dart';
 import '../../widget/footer.dart';
 import '../../widget/header.dart';
 import 'widget/card_creator.dart';
@@ -56,13 +56,15 @@ class DiscoverCreatorScreen extends StatelessWidget {
                     onPressed: () {},
                   ),
                   ElevatedButtonWidget(
-                    title: 'All Creator',
                     height: Dimens.HEIGHT_42,
                     width: size.width / 3.3,
                     color: AppColor.offWhite,
-                    textColor: AppColor.body,
                     borderRadius: Dimens.RADIUS_30,
                     onPressed: () {},
+                    child: Text(
+                      'All Creator',
+                      style: TxtStyleMobile.txt_Medium(color: AppColor.body),
+                    ),
                   ),
                 ],
               ),
