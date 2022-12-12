@@ -17,7 +17,7 @@ class TextLinkWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return external
         ? Row(children: [
-            Image.asset(AppImage.icon_AlertInfo),
+            Image.asset(AppImage.icon_alertInfo),
             RichText(
                 text: TextSpan(
               style: TextStyle(

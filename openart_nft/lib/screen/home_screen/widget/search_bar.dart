@@ -31,14 +31,14 @@ class SearchBarWidget extends StatelessWidget {
                 hintStyle: TxtStyleMobile.txt_XSmall,
                 border: InputBorder.none,
                 icon: ImageIcon(
-                  AssetImage(AppImage.icon_Search),
+                  AssetImage(AppImage.icon_search),
                   size: Dimens.SIZE_16,
                 ),
               ),
             ),
           ),
           ImageIcon(
-            AssetImage(AppImage.icon_Microphone),
+            AssetImage(AppImage.icon_microphone),
             size: Dimens.SIZE_16,
           ),
         ],

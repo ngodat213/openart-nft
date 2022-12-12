@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'manager/manager_routes.dart';
-import 'screen/about_screen/about_screen.dart';
-import 'screen/faq_screen/faq_screen.dart';
+import 'screen/profile_creator/profile_creator.dart';
 import 'theme/colors.dart';
 
 void main() {
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: AppColor.bgColor,
       ),
-      home: FAQScreen(),
+      home: ProfileCreatorScreen(),
       routes: ManagerRoutes.manager,
     );
   }

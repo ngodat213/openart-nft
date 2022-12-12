@@ -75,7 +75,8 @@ class ProfileEmptyScreen extends StatelessWidget {
                   BaseNavigation.push(context,
                       routeName: ManagerRoutes.profile_edit);
                 },
-                title: 'Explore OpenArt',
+                child:
+                    Text('Explore OpenArt', style: TxtStyleMobile.link_Large2),
               ),
               FooterWidget(size: size, top: Dimens.HEIGHT_130)
             ],

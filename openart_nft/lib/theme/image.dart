@@ -3,28 +3,28 @@ class AppImage {
 
   static String logo = 'res/icons/Logo.png';
 
-  static String icon_AlertInfo = 'res/icons/Alert-info.png';
-  static String icon_AtSign = 'res/icons/At-sign.png';
-  static String icon_Attach = 'res/icons/Attach.png';
-  static String icon_BackArrow = 'res/icons/Back Arrow.png';
-  static String icon_Back = 'res/icons/Back.png';
-  static String icon_Backspace = 'res/icons/Backspace.png';
-  static String icon_Backward = 'res/icons/Backward.png';
-  static String icon_Bag = 'res/icons/Bag.png';
-  static String icon_Bookmark = 'res/icons/Bookmark.png';
-  static String icon_Calandar = 'res/icons/Calandar.png';
+  static String icon_alertInfo = 'res/icons/Alert-info.png';
+  static String icon_atSign = 'res/icons/At-sign.png';
+  static String icon_attach = 'res/icons/Attach.png';
+  static String icon_backarrow = 'res/icons/Back Arrow.png';
+  static String icon_back = 'res/icons/Back.png';
+  static String icon_backspace = 'res/icons/Backspace.png';
+  static String icon_backward = 'res/icons/Backward.png';
+  static String icon_bag = 'res/icons/Bag.png';
+  static String icon_bookmark = 'res/icons/Bookmark.png';
+  static String icon_calandar = 'res/icons/Calandar.png';
   static String icon_Call = 'res/icons/Call.png';
-  static String icon_Camera = 'res/icons/Camera.png';
-  static String icon_External = 'res/icons/External.png';
-  static String icon_Menu = 'res/icons/Menu.png';
-  static String icon_Star = 'res/icons/Star.png';
-  static String icon_Search = 'res/icons/Search.png';
-  static String icon_Microphone = 'res/icons/Microphone.png';
-  static String icon_Heart = 'res/icons/Heart.png';
+  static String icon_camera = 'res/icons/Camera.png';
+  static String icon_external = 'res/icons/External.png';
+  static String icon_menu = 'res/icons/Menu.png';
+  static String icon_star = 'res/icons/Star.png';
+  static String icon_search = 'res/icons/Search.png';
+  static String icon_microphone = 'res/icons/Microphone.png';
+  static String icon_heart = 'res/icons/Heart.png';
   static String icon_fire = 'res/icons/FireEmoji.png';
-  static String icon_starBid = 'res/icons/StarEmoji.png';
-  static String icon_ForwardArrow = 'res/icons/Forward Arrow.png';
-  static String icon_Export = 'res/icons/Export.png';
+  static String icon_starbid = 'res/icons/StarEmoji.png';
+  static String icon_forwardarrow = 'res/icons/Forward Arrow.png';
+  static String icon_export = 'res/icons/Export.png';
   static String icon_Copy = 'res/icons/Copy.png';
   static String icon_link = 'res/icons/Link.png';
   static String icon_edit = 'res/icons/Edit.png';
@@ -35,6 +35,11 @@ class AppImage {
   static String icon_youtube = 'res/icons/youtube-fill.png';
   static String icon_facebook = 'res/icons/faceboo.png';
   static String icon_tiktok = 'res/icons/tiktok.png';
+  static String icon_mail = 'res/icons/Mail.png';
+  static String icon_card = 'res/icons/Card.png';
+  static String icon_call = 'res/icons/Call.png';
+  static String icon_more = 'res/icons/More.png';
+  static String icon_plus = 'res/icons/Plus.png';
 
   // IMAGE
   static String image1 = 'res/image/image1.png';
@@ -49,9 +54,9 @@ class AppImage {
   static String rectangle8 = 'res/image/Rectangle8.png';
   static String rectangle9 = 'res/image/Rectangle9.png';
   static String rectangle10 = 'res/image/Rectangle10.png';
-  static String globe = 'res/image/globe.png';
   static String wallpaper = 'res/image/wallpaper.jpg';
   static String avatarImage = 'res/image/avatarImage.jpg';
   static String processor = 'res/image/processor.png';
   static String proteced = 'res/image/proteced.png';
+  static String globe = 'res/image/globe.png';
 }

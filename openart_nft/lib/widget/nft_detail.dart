@@ -60,7 +60,7 @@ class NFTDetailWidget extends StatelessWidget {
                     decoration: BoxDecoration(
                         color: AppColor.offWhite,
                         borderRadius: BorderRadius.circular(Dimens.RADIUS_100)),
-                    child: Image.asset(AppImage.icon_Heart),
+                    child: Image.asset(AppImage.icon_heart),
                   ),
                   Container(
                     height: Dimens.HEIGHT_40,
@@ -68,7 +68,7 @@ class NFTDetailWidget extends StatelessWidget {
                     decoration: BoxDecoration(
                         color: AppColor.offWhite,
                         borderRadius: BorderRadius.circular(Dimens.RADIUS_100)),
-                    child: Image.asset(AppImage.icon_Export),
+                    child: Image.asset(AppImage.icon_export),
                   ),
                 ],
               ),

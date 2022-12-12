@@ -4,8 +4,8 @@ import '../../../manager/manager_routes.dart';
 import '../../../theme/dimens.dart';
 import '../../../theme/image.dart';
 import '../../../widget/base_navigation.dart';
-import '../../home_screen/widget/card_item.dart';
-import '../../home_screen/widget/sold_for.dart';
+import '../../../widget/card_item.dart';
+import '../../../widget/sold_for.dart';
 
 class ViewCreatedWidget extends StatelessWidget {
   const ViewCreatedWidget({

@@ -41,16 +41,18 @@ class FollowUserWidget extends StatelessWidget {
             onPressed: () {},
             color: AppColor.placeholder,
             borderRadius: Dimens.RADIUS_8,
-            child: Row(children: [
-              Image.asset(AppImage.icon_Heart),
-              Padding(
-                padding: const EdgeInsets.all(Dimens.PADDING_7),
-                child: Text(
-                  'Follow',
-                  style: TxtStyleMobile.txt_Medium(),
-                ),
-              )
-            ]),
+            child: Row(
+              children: [
+                Image.asset(AppImage.icon_heart),
+                Padding(
+                  padding: const EdgeInsets.all(Dimens.PADDING_7),
+                  child: Text(
+                    'Follow',
+                    style: TxtStyleMobile.txt_Medium(),
+                  ),
+                )
+              ],
+            ),
           )
         ],
       ),

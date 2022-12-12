@@ -60,7 +60,7 @@ class CardActivityWidget extends StatelessWidget {
               ),
             ],
           ),
-          Image.asset(AppImage.icon_External),
+          Image.asset(AppImage.icon_external),
         ],
       ),
     );

@@ -8,11 +8,11 @@ class BorderGradinetButton extends StatelessWidget {
   const BorderGradinetButton({
     Key? key,
     required this.size,
-    required this.title,
+    required this.child,
     required this.onPressed,
   }) : super(key: key);
 
-  final String title;
+  final Widget child;
   final Function onPressed;
   final Size size;
 
@@ -41,8 +41,7 @@ class BorderGradinetButton extends StatelessWidget {
               border: Border.all(color: Colors.white),
               borderRadius: BorderRadius.circular(Dimens.RADIUS_8),
             ),
-            child:
-                Center(child: Text(title, style: TxtStyleMobile.link_Large2)),
+            child: Center(child: child),
           ),
         ),
       ),

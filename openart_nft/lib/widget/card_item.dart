@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:openart_nft/screen/home_screen/widget/small_avataruser.dart';
-import 'dart:io';
 
-import '../../../theme/colors.dart';
-import '../../../theme/dimens.dart';
-import '../../../theme/image.dart';
-import '../../../theme/txt_style.dart';
+import '../theme/colors.dart';
+import '../theme/dimens.dart';
+import '../theme/image.dart';
+import '../theme/txt_style.dart';
 
 class CardItemWidget extends StatelessWidget {
   const CardItemWidget({
@@ -120,7 +119,7 @@ class ProductWidget extends StatelessWidget {
                 ],
               ),
               ImageIcon(
-                AssetImage(AppImage.icon_Heart),
+                AssetImage(AppImage.icon_heart),
                 size: Dimens.SIZE_20,
               ),
             ],

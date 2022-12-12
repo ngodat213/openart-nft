@@ -42,14 +42,14 @@ class HotBidWidget extends StatelessWidget {
               Container(
                 padding: EdgeInsets.only(right: Dimens.PADDING_16),
                 child: Image.asset(
-                  AppImage.icon_BackArrow,
+                  AppImage.icon_backarrow,
                   width: Dimens.SIZE_24,
                 ),
               ),
               Container(
                 padding: EdgeInsets.only(right: Dimens.PADDING_16),
                 child: Image.asset(
-                  AppImage.icon_ForwardArrow,
+                  AppImage.icon_forwardarrow,
                   width: Dimens.SIZE_24,
                 ),
               )

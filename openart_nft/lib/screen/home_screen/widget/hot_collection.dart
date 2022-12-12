@@ -22,7 +22,7 @@ class HotCollectionWidget extends StatelessWidget {
           Container(
             width: Dimens.SIZE_19,
             height: Dimens.SIZE_19,
-            child: Image.asset(AppImage.icon_starBid),
+            child: Image.asset(AppImage.icon_starbid),
           ),
           Container(
             padding: EdgeInsets.only(

@@ -39,7 +39,7 @@ class FooterWidget extends StatelessWidget {
             BaseNavigation.push(context,
                 routeName: ManagerRoutes.discover_creator);
           },
-          title: 'Discover more',
+          child: Text('Discover more', style: TxtStyleMobile.link_Large2),
         ),
         Container(
           margin: EdgeInsets.only(top: Dimens.PADDING_89),

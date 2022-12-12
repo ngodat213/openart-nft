@@ -32,7 +32,7 @@ class CardSoldWidget extends StatelessWidget {
           children: [
             Align(
                 alignment: Alignment.topRight,
-                child: Image.asset(AppImage.icon_starBid)),
+                child: Image.asset(AppImage.icon_starbid)),
             RichText(
               text: TextSpan(
                 children: [

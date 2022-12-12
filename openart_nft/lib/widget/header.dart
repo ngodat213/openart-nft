@@ -15,7 +15,7 @@ class HeaderWidget extends StatelessWidget {
       margin: margin,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [Image.asset(AppImage.logo), Image.asset(AppImage.icon_Menu)],
+        children: [Image.asset(AppImage.logo), Image.asset(AppImage.icon_menu)],
       ),
     );
   }

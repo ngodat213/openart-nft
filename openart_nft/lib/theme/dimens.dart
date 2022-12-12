@@ -35,6 +35,7 @@ class Dimens {
   static const PADDING_75 = 75.0;
   static const PADDING_60 = 60.0;
   static const PADDING_50 = 50.0;
+  static const PADDING_45 = 45.0;
   static const PADDING_40 = 40.0;
   static const PADDING_38 = 38.0;
   static const PADDING_30 = 30.0;

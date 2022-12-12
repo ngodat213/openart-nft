@@ -43,9 +43,9 @@ class DetailSoldScreen extends StatelessWidget {
               ),
               ViewOnWidget(
                 onPressed: () {},
-                prefixIcon: AppImage.icon_Star,
+                prefixIcon: AppImage.icon_star,
                 title: 'View on Etherscan',
-                suffixIcon: AppImage.icon_External,
+                suffixIcon: AppImage.icon_external,
                 magin: EdgeInsets.only(
                   left: Dimens.PADDING_16,
                   right: Dimens.PADDING_16,
@@ -55,9 +55,9 @@ class DetailSoldScreen extends StatelessWidget {
               ),
               ViewOnWidget(
                 onPressed: () {},
-                prefixIcon: AppImage.icon_Star,
+                prefixIcon: AppImage.icon_star,
                 title: 'View on IPFS',
-                suffixIcon: AppImage.icon_External,
+                suffixIcon: AppImage.icon_external,
                 magin: EdgeInsets.only(
                   left: Dimens.PADDING_16,
                   right: Dimens.PADDING_16,
@@ -66,9 +66,9 @@ class DetailSoldScreen extends StatelessWidget {
               ),
               ViewOnWidget(
                 onPressed: () {},
-                prefixIcon: AppImage.icon_Star,
+                prefixIcon: AppImage.icon_star,
                 title: 'View IPFS Metadata',
-                suffixIcon: AppImage.icon_External,
+                suffixIcon: AppImage.icon_external,
                 magin: EdgeInsets.only(
                   left: Dimens.PADDING_16,
                   right: Dimens.PADDING_16,

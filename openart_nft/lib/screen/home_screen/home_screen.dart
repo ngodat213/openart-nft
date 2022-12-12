@@ -18,8 +18,8 @@ import 'widget/hot_collection.dart';
 import 'widget/list_hotbid.dart';
 import 'widget/more_image.dart';
 import 'widget/row_image.dart';
-import 'widget/sold_for.dart';
-import 'widget/card_item.dart';
+import '../../widget/sold_for.dart';
+import '../../widget/card_item.dart';
 import 'widget/current_bid.dart';
 import 'widget/price.dart';
 import 'widget/search_bar.dart';
@@ -104,7 +104,8 @@ class HomeScreen extends StatelessWidget {
                   Center(
                     child: BorderGradinetButton(
                       size: size,
-                      title: 'View artwork',
+                      child: Text('View artwork',
+                          style: TxtStyleMobile.link_Large2),
                       onPressed: () {
                         BaseNavigation.push(context,
                             routeName: ManagerRoutes.detail_sold);
@@ -206,7 +207,8 @@ class HomeScreen extends StatelessWidget {
                   BorderGradinetButton(
                     size: size,
                     onPressed: () {},
-                    title: 'View more collection',
+                    child: Text('View more collection',
+                        style: TxtStyleMobile.link_Large2),
                   ),
                   DividerWidget(
                     color: AppColor.placeholder,
