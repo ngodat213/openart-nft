@@ -27,6 +27,15 @@ class AppImage {
   static String icon_Export = 'res/icons/Export.png';
   static String icon_Copy = 'res/icons/Copy.png';
   static String icon_link = 'res/icons/Link.png';
+  static String icon_edit = 'res/icons/Edit.png';
+  static String icon_image = 'res/icons/Image.png';
+  static String icon_twitter = 'res/icons/twitter.png';
+  static String icon_instagram = 'res/icons/instagram.png';
+  static String icon_discord = 'res/icons/Discord.png';
+  static String icon_youtube = 'res/icons/youtube-fill.png';
+  static String icon_facebook = 'res/icons/faceboo.png';
+  static String icon_tiktok = 'res/icons/tiktok.png';
+
   // IMAGE
   static String image1 = 'res/image/image1.png';
   static String rectangle = 'res/image/Rectangle.png';
@@ -40,6 +49,9 @@ class AppImage {
   static String rectangle8 = 'res/image/Rectangle8.png';
   static String rectangle9 = 'res/image/Rectangle9.png';
   static String rectangle10 = 'res/image/Rectangle10.png';
+  static String globe = 'res/image/globe.png';
   static String wallpaper = 'res/image/wallpaper.jpg';
   static String avatarImage = 'res/image/avatarImage.jpg';
+  static String processor = 'res/image/processor.png';
+  static String proteced = 'res/image/proteced.png';
 }

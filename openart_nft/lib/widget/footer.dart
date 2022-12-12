@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
+import '../manager/manager_routes.dart';
 import '../theme/colors.dart';
 import '../theme/dimens.dart';
 import '../theme/image.dart';
 import '../theme/txt_style.dart';
+import 'base_navigation.dart';
 import 'btn_border_gradient.dart';
 import 'divider.dart';
 import 'btn_raised_gradient.dart';
@@ -33,7 +35,10 @@ class FooterWidget extends StatelessWidget {
         SizedBox(height: Dimens.HEIGHT_16),
         BorderGradinetButton(
           size: size,
-          onPressed: () {},
+          onPressed: () {
+            BaseNavigation.push(context,
+                routeName: ManagerRoutes.discover_creator);
+          },
           title: 'Discover more',
         ),
         Container(

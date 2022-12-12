@@ -4,7 +4,7 @@ import '../../../theme/colors.dart';
 import '../../../theme/dimens.dart';
 import '../../../theme/image.dart';
 import '../../../theme/txt_style.dart';
-import '../../../widget/btn_elevated.dart';
+import '../../../widget/detail_follow.dart';
 
 class DetailProfileUserWidget extends StatelessWidget {
   const DetailProfileUserWidget({
@@ -32,34 +32,15 @@ class DetailProfileUserWidget extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
-            children: [
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(following.toString(), style: TxtStyleMobile.h3b),
-                  Text('Following', style: TxtStyleMobile.link_XSmall),
-                ],
-              ),
-              SizedBox(width: 30),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(follower.toString(), style: TxtStyleMobile.h3b),
-                  Text('Followers', style: TxtStyleMobile.link_XSmall),
-                ],
-              ),
-              SizedBox(width: 30),
-              ElevatedButtonWidget(
-                width: size.width / 3,
-                height: Dimens.HEIGHT_40,
-                borderRadius: Dimens.RADIUS_8,
-                color: AppColor.offWhite,
-                onPressed: () {},
-                child: Text('Follow',
-                    style: TxtStyleMobile.txt_Medium(color: AppColor.body)),
-              )
-            ],
+          DetailFollowWidget(
+            following: following,
+            follower: follower,
+            size: size / 1.15,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            labelBtn: Text(
+              'Follow',
+              style: TxtStyleMobile.txt_Medium(color: AppColor.body),
+            ),
           ),
           SizedBox(height: 30),
           Text('Followed by', style: TxtStyleMobile.txt_Large),

@@ -4,7 +4,7 @@ import '../../theme/dimens.dart';
 import '../../theme/image.dart';
 import '../../widget/footer.dart';
 import '../../widget/header.dart';
-import 'widget/avatar_profile.dart';
+import '../../widget/avatar_profile.dart';
 import 'widget/detail_profile_user.dart';
 import 'widget/tabbar.dart';
 

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../../../theme/colors.dart';
-import '../../../theme/dimens.dart';
-import '../../../theme/image.dart';
-import '../../../theme/txt_style.dart';
+import '../theme/colors.dart';
+import '../theme/dimens.dart';
+import '../theme/image.dart';
+import '../theme/txt_style.dart';
 
 class AvatarProfileWidget extends StatelessWidget {
   const AvatarProfileWidget({

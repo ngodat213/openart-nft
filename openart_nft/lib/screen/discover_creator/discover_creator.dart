@@ -127,7 +127,7 @@ class DiscoverCreatorScreen extends StatelessWidget {
               ),
               Center(
                 child: BorderGradinetButton(
-                  size: size,
+                  size: size / 1.15,
                   title: 'Load more',
                   onPressed: () {},
                 ),
