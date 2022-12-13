@@ -62,7 +62,7 @@ class _UploadArtworkScreenState extends State<UploadArtworkScreen> {
                   top: Dimens.PADDING_16,
                   bottom: Dimens.PADDING_10,
                 ),
-                child: Text('Information', style: TxtStyleMobile.link_XSmall),
+                child: Text('Information', style: TxtStyleMobile.link_XSmall()),
               ),
               TextFormFieldWidget(
                 title: 'Item name',
@@ -111,6 +111,7 @@ class _UploadArtworkScreenState extends State<UploadArtworkScreen> {
                     Text('Choose an exiting collection or create a new one'),
                 controlAffinity: ListTileControlAffinity.leading,
               ),
+              SizedBox(height: Dimens.HEIGHT_30),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [

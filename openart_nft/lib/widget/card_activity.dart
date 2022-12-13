@@ -52,7 +52,7 @@ class CardActivityWidget extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(title, style: TxtStyleMobile.link_XSmall),
+                  Text(title, style: TxtStyleMobile.link_XSmall()),
                   Text(daytime, style: TxtStyleMobile.txt_Small2),
                   SizedBox(height: Dimens.HEIGHT_12),
                   widget

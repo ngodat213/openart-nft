@@ -60,6 +60,7 @@ class Dimens {
   static const RADIUS_30 = 30.0;
   static const RADIUS_28 = 28.0;
   static const RADIUS_24 = 24.0;
+  static const RADIUS_20 = 20.0;
   static const RADIUS_16 = 16.0;
   static const RADIUS_8 = 8.0;
 

@@ -112,11 +112,14 @@ class TxtStyleMobile {
     fontSize: Dimens.FONT_SIZE_14,
     fontWeight: FontWeight.w700,
   );
-  static TextStyle link_XSmall = GoogleFonts.epilogue(
-    color: AppColor.body,
-    fontSize: Dimens.FONT_SIZE_13,
-    fontWeight: FontWeight.w700,
-  );
+
+  static TextStyle link_XSmall({Color color = AppColor.body}) {
+    return GoogleFonts.epilogue(
+      color: color,
+      fontSize: Dimens.FONT_SIZE_13,
+      fontWeight: FontWeight.w700,
+    );
+  }
 }
 
 class TxtStyleDesktop {

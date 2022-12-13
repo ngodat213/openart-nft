@@ -37,14 +37,14 @@ class DetailFollowWidget extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(following.toString(), style: TxtStyleMobile.h3b),
-                  Text('Following', style: TxtStyleMobile.link_XSmall),
+                  Text('Following', style: TxtStyleMobile.link_XSmall()),
                 ],
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(follower.toString(), style: TxtStyleMobile.h3b),
-                  Text('Followers', style: TxtStyleMobile.link_XSmall),
+                  Text('Followers', style: TxtStyleMobile.link_XSmall()),
                 ],
               ),
             ],
