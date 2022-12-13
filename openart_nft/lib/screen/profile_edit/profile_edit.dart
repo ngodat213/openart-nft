@@ -11,7 +11,7 @@ import '../../widget/divider.dart';
 import '../../widget/footer.dart';
 import '../home_screen/widget/btn_outline.dart';
 import 'widget/btn_link.dart';
-import 'widget/multi_line_field.dart';
+import '../../widget/multi_line_field.dart';
 import 'widget/text_form_field.dart';
 import 'widget/upload_image.dart';
 
@@ -75,7 +75,10 @@ class ProfileEditScreen extends StatelessWidget {
                 ),
                 child: Text('Enter your bio', style: TxtStyleMobile.txt_Large),
               ),
-              MultiLineFieldWidget(size: size),
+              MultiLineFieldWidget(
+                size: size,
+                title: 'Enter your bio here',
+              ),
               Container(
                 margin: EdgeInsets.only(
                   left: Dimens.PADDING_16,
@@ -166,7 +169,11 @@ class ProfileEditScreen extends StatelessWidget {
               BtnLinkWidget(icon: AppImage.icon_tiktok, title: 'Tiktok'),
               SizedBox(height: Dimens.PADDING_40),
               RaisedGradientButton(
-                title: 'Save',
+                size: size,
+                child: Text(
+                  'Save',
+                  style: TxtStyleMobile.txt_Medium(color: AppColor.offWhite),
+                ),
                 width: size.width - 32,
                 borderRadius: Dimens.RADIUS_8,
                 height: Dimens.HEIGHT_56,

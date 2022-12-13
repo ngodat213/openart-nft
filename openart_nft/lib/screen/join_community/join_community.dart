@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:openart_nft/widget/header.dart';
 
+import '../../theme/colors.dart';
 import '../../theme/dimens.dart';
 import '../../theme/image.dart';
 import '../../theme/txt_style.dart';
@@ -41,7 +42,11 @@ class JoinCommunityScreen extends StatelessWidget {
                 ),
               ),
               RaisedGradientButton(
-                title: 'Join Community Upvote',
+                size: size,
+                child: Text(
+                  'Join Community Upvote',
+                  style: TxtStyleMobile.txt_Medium(color: AppColor.offWhite),
+                ),
                 width: size.width - 32,
                 borderRadius: Dimens.RADIUS_8,
                 height: Dimens.HEIGHT_56,

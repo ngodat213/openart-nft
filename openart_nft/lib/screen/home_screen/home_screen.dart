@@ -10,8 +10,6 @@ import '../../widget/divider.dart';
 import '../../widget/footer.dart';
 import '../../widget/btn_raised_gradient.dart';
 import '../../widget/btn_border_gradient.dart';
-import '../detail_auction/detail_auction.dart';
-import '../detail_sold/detail_sold.dart';
 import 'widget/follow_user.dart';
 import 'widget/hot_bit.dart';
 import 'widget/hot_collection.dart';
@@ -90,7 +88,12 @@ class HomeScreen extends StatelessWidget {
                   PriceWidget(eth: 1.5, usd: 2683.73),
                   Center(
                     child: RaisedGradientButton(
-                      title: 'Place a bid',
+                      size: size,
+                      child: Text(
+                        'Place a bid',
+                        style:
+                            TxtStyleMobile.txt_Medium(color: AppColor.offWhite),
+                      ),
                       width: size.width - 32,
                       height: Dimens.HEIGHT_56,
                       borderRadius: Dimens.RADIUS_8,

@@ -1,21 +1,23 @@
 import 'package:flutter/material.dart';
 
 import '../theme/colors.dart';
-import '../theme/txt_style.dart';
+import '../theme/dimens.dart';
 
 class RaisedGradientButton extends StatelessWidget {
   const RaisedGradientButton({
     Key? key,
-    required this.title,
+    required this.child,
     required this.onPressed,
-    required this.height,
-    required this.width,
-    required this.borderRadius,
+    this.height,
+    this.width,
+    this.borderRadius,
+    required this.size,
   }) : super(key: key);
-  final String title;
-  final double width;
-  final double height;
-  final double borderRadius;
+  final Size size;
+  final Widget child;
+  final double? width;
+  final double? height;
+  final double? borderRadius;
   final Function onPressed;
 
   @override
@@ -27,18 +29,13 @@ class RaisedGradientButton extends StatelessWidget {
         elevation: MaterialStateProperty.all(0),
       ),
       child: Container(
-        width: width,
-        height: height,
+        width: width ?? size.width - 33,
+        height: height ?? Dimens.HEIGHT_56,
         decoration: BoxDecoration(
           gradient: AppColor.gradientButton,
-          borderRadius: BorderRadius.circular(borderRadius),
+          borderRadius: BorderRadius.circular(borderRadius ?? Dimens.RADIUS_8),
         ),
-        child: Center(
-          child: Text(
-            title,
-            style: TxtStyleMobile.txt_Medium(color: AppColor.offWhite),
-          ),
-        ),
+        child: Center(child: child),
       ),
     );
   }

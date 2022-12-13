@@ -40,6 +40,7 @@ class AppImage {
   static String icon_call = 'res/icons/Call.png';
   static String icon_more = 'res/icons/More.png';
   static String icon_plus = 'res/icons/Plus.png';
+  static String icon_view = 'res/icons/View.png';
 
   // IMAGE
   static String image1 = 'res/image/image1.png';

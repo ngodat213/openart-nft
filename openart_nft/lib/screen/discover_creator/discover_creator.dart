@@ -49,7 +49,12 @@ class DiscoverCreatorScreen extends StatelessWidget {
               Row(
                 children: [
                   RaisedGradientButton(
-                    title: 'Feature Creatior',
+                    size: size,
+                    child: Text(
+                      'Feature Creatior',
+                      style:
+                          TxtStyleMobile.txt_Medium(color: AppColor.offWhite),
+                    ),
                     height: Dimens.HEIGHT_42,
                     borderRadius: Dimens.RADIUS_30,
                     width: size.width / 2.5,

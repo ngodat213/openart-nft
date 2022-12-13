@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../theme/colors.dart';
 import '../theme/dimens.dart';
-import '../theme/txt_style.dart';
 
 class BorderGradinetButton extends StatelessWidget {
   const BorderGradinetButton({

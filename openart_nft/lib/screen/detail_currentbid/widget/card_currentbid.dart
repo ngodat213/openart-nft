@@ -58,7 +58,11 @@ class CurrentBidWidget extends StatelessWidget {
             ),
             SizedBox(height: Dimens.HEIGHT_16),
             RaisedGradientButton(
-              title: 'Place a bid',
+              size: size,
+              child: Text(
+                'Place a bid',
+                style: TxtStyleMobile.txt_Medium(color: AppColor.offWhite),
+              ),
               height: Dimens.HEIGHT_40,
               width: size.width - 40,
               borderRadius: Dimens.RADIUS_8,

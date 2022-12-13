@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'manager/manager_routes.dart';
-import 'screen/profile_creator/profile_creator.dart';
+import 'screen/home_screen/home_screen.dart';
+import 'screen/upload_artwork/upload_artwork.dart';
 import 'theme/colors.dart';
 
 void main() {
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: AppColor.bgColor,
       ),
-      home: ProfileCreatorScreen(),
+      home: UploadArtworkScreen(),
       routes: ManagerRoutes.manager,
     );
   }

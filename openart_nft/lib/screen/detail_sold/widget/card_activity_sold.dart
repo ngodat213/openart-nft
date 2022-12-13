@@ -4,7 +4,6 @@ import '../../../theme/colors.dart';
 import '../../../theme/dimens.dart';
 import '../../../theme/image.dart';
 import '../../../theme/txt_style.dart';
-import '../../home_screen/widget/small_avataruser.dart';
 
 class CardActivitySoldWidget extends StatelessWidget {
   const CardActivitySoldWidget({

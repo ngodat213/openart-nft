@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../theme/colors.dart';
 import '../../theme/dimens.dart';
 import '../../theme/image.dart';
 import '../../theme/txt_style.dart';
-import '../../widget/btn_raised_gradient.dart';
 import '../../widget/card_activity.dart';
 import '../../widget/footer.dart';
 import '../../widget/header.dart';

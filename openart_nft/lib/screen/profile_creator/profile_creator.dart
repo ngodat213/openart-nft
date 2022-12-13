@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../../manager/manager_routes.dart';
-import '../../theme/colors.dart';
 import '../../theme/dimens.dart';
 import '../../theme/image.dart';
 import '../../theme/txt_style.dart';
@@ -12,7 +11,6 @@ import '../../widget/card_item.dart';
 import '../../widget/footer.dart';
 import '../../widget/header.dart';
 import '../../widget/sold_for.dart';
-import '../home_screen/widget/btn_outline.dart';
 import 'widget/card_creator.dart';
 
 class ProfileCreatorScreen extends StatelessWidget {

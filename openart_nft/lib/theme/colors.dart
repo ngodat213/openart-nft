@@ -13,6 +13,7 @@ class AppColor {
   static const bgColor = Color(0xffF8F8F8);
   static const offWhite = Color(0xffFCFCFC);
   static const white = Color(0xffFFFFFF);
+  static const activity = Color(0xff0000EA);
 
 // Colors default
   static const successDefault = Color(0xff009846);
