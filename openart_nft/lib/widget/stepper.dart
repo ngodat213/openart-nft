@@ -31,12 +31,12 @@ class StepperWidget extends StatelessWidget {
             color: AppColor.placeholder,
             width: size.width / 5.5,
             margin: EdgeInsets.only(bottom: Dimens.PADDING_13)),
-        _stepNumber(2, 'Select', step2),
+        _stepNumber(2, 'Scan', step2),
         DividerWidget(
             color: AppColor.placeholder,
             width: size.width / 5.5,
             margin: EdgeInsets.only(bottom: Dimens.PADDING_13)),
-        _stepNumber(1, 'Select', step3)
+        _stepNumber(3, 'Confirm', step3)
       ]),
     );
   }
@@ -49,7 +49,7 @@ class StepperWidget extends StatelessWidget {
           alignment: Alignment.center,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(Dimens.RADIUS_100),
-              gradient: status == 2
+              gradient: status == 2 || status == 3
                   ? AppColor.primaryColor
                   : LinearGradient(colors: [AppColor.line, AppColor.line])),
           child: status == 3

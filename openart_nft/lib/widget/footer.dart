@@ -14,16 +14,16 @@ class FooterWidget extends StatelessWidget {
   const FooterWidget({
     Key? key,
     required this.size,
-    required this.top,
+    this.top,
   }) : super(key: key);
-  final double top;
+  final double? top;
   final Size size;
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        TextLogoWidget(top: top, size: size),
+        TextLogoWidget(top: top ?? 0, size: size),
         SizedBox(height: Dimens.HEIGHT_30),
         RaisedGradientButton(
           size: size,

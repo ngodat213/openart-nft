@@ -28,6 +28,8 @@ class Dimens {
   static const HEIGHT_16 = 16.0;
   static const HEIGHT_14 = 14.0;
   static const HEIGHT_12 = 12.0;
+  static const HEIGHT_8 = 8.0;
+  static const HEIGHT_6 = 6.0;
   static const HEIGHT_4 = 4.0;
   static const HEIGHT_1 = 1.0;
 

@@ -33,7 +33,10 @@ class _UploadArtworkScreenState extends State<UploadArtworkScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              HeaderWidget(margin: EdgeInsets.all(Dimens.PADDING_16)),
+              HeaderWidget(
+                margin: EdgeInsets.all(Dimens.PADDING_16),
+                size: size,
+              ),
               Container(
                 margin: EdgeInsets.only(
                   left: Dimens.PADDING_16,

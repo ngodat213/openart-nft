@@ -23,7 +23,10 @@ class ProfileEmptyScreen extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              HeaderWidget(margin: EdgeInsets.all(Dimens.PADDING_16)),
+              HeaderWidget(
+                margin: EdgeInsets.all(Dimens.PADDING_16),
+                size: size,
+              ),
               AvatarProfileWidget(
                 height: size.height,
                 width: size.width,

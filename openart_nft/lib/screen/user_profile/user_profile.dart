@@ -33,7 +33,10 @@ class _UserProfileScreenState extends State<UserProfileScreen>
         child: SingleChildScrollView(
           child: Column(
             children: [
-              HeaderWidget(margin: EdgeInsets.all(Dimens.PADDING_13)),
+              HeaderWidget(
+                margin: EdgeInsets.all(Dimens.PADDING_16),
+                size: size,
+              ),
               SizedBox(height: 26),
               AvatarProfileWidget(
                 height: size.height,

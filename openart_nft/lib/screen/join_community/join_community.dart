@@ -19,7 +19,10 @@ class JoinCommunityScreen extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              HeaderWidget(margin: EdgeInsets.all(Dimens.PADDING_16)),
+              HeaderWidget(
+                margin: EdgeInsets.all(Dimens.PADDING_16),
+                size: size,
+              ),
               Container(
                 margin: EdgeInsets.only(top: Dimens.PADDING_16),
                 child: Text(

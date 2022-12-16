@@ -19,7 +19,8 @@ class AboutScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              HeaderWidget(margin: EdgeInsets.all(Dimens.PADDING_16)),
+              HeaderWidget(
+                  margin: EdgeInsets.all(Dimens.PADDING_16), size: size),
               Center(
                 child: Container(
                   margin: EdgeInsets.only(top: Dimens.PADDING_16),

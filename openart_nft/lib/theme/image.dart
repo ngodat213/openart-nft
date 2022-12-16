@@ -42,6 +42,7 @@ class AppImage {
   static String icon_plus = 'res/icons/Plus.png';
   static String icon_view = 'res/icons/View.png';
   static String icon_check = 'res/icons/Check.png';
+  static String icon_close = 'res/icons/Close.png';
 
   // IMAGE
   static String image1 = 'res/image/image1.png';
@@ -61,4 +62,5 @@ class AppImage {
   static String processor = 'res/image/processor.png';
   static String proteced = 'res/image/proteced.png';
   static String globe = 'res/image/globe.png';
+  static String qr = 'res/image/qr.png';
 }

@@ -23,12 +23,8 @@ class DetailAuctionScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               HeaderWidget(
-                margin: EdgeInsets.fromLTRB(
-                  Dimens.PADDING_16,
-                  Dimens.PADDING_6,
-                  Dimens.PADDING_16,
-                  Dimens.PADDING_16,
-                ),
+                margin: EdgeInsets.all(Dimens.PADDING_16),
+                size: size,
               ),
               NFTDetailWidget(
                 size: size,

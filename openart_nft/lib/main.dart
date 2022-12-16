@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'manager/manager_routes.dart';
-import 'screen/add_wallet_step1/add_wallet_step1.dart';
 import 'screen/home_screen/home_screen.dart';
-import 'screen/upload_artwork/upload_artwork.dart';
 import 'theme/colors.dart';
 
 void main() {
@@ -19,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: AppColor.bgColor,
       ),
-      home: AddWalletStep1Screen(),
+      home: HomeScreen(),
       routes: ManagerRoutes.manager,
     );
   }

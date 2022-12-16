@@ -6,23 +6,26 @@ import '../../theme/dimens.dart';
 import '../../theme/image.dart';
 import '../../theme/txt_style.dart';
 import '../../widget/base_navigation.dart';
+import '../../widget/custom_dialog.dart';
+import '../../widget/custom_hotbid.dart';
+import '../../widget/custom_soldfor.dart';
 import '../../widget/divider.dart';
 import '../../widget/footer.dart';
 import '../../widget/btn_raised_gradient.dart';
 import '../../widget/btn_border_gradient.dart';
+import '../../widget/sold_for.dart';
+import '../../widget/card_item.dart';
+import '../../widget/header.dart';
+import '../../widget/current_bid.dart';
+import 'widget/search_bar.dart';
+import 'widget/price.dart';
+import 'widget/live_acction.dart';
 import 'widget/follow_user.dart';
 import 'widget/hot_bit.dart';
 import 'widget/hot_collection.dart';
 import 'widget/list_hotbid.dart';
 import 'widget/more_image.dart';
 import 'widget/row_image.dart';
-import '../../widget/sold_for.dart';
-import '../../widget/card_item.dart';
-import 'widget/current_bid.dart';
-import 'widget/price.dart';
-import 'widget/search_bar.dart';
-import '../../widget/header.dart';
-import 'widget/live_acction.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -48,13 +51,7 @@ class HomeScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   HeaderWidget(
-                    margin: EdgeInsets.fromLTRB(
-                      Dimens.PADDING_16,
-                      Dimens.PADDING_6,
-                      Dimens.PADDING_16,
-                      Dimens.PADDING_16,
-                    ),
-                  ),
+                      margin: EdgeInsets.all(Dimens.PADDING_16), size: size),
                   Container(
                     alignment: Alignment.center,
                     child: Text(
@@ -87,22 +84,20 @@ class HomeScreen extends StatelessWidget {
                   ),
                   PriceWidget(eth: 1.5, usd: 2683.73),
                   Center(
-                    child: RaisedGradientButton(
-                      size: size,
-                      child: Text(
-                        'Place a bid',
-                        style:
-                            TxtStyleMobile.txt_Medium(color: AppColor.offWhite),
-                      ),
-                      width: size.width - 32,
-                      height: Dimens.HEIGHT_56,
-                      borderRadius: Dimens.RADIUS_8,
-                      onPressed: () {
-                        BaseNavigation.push(context,
-                            routeName: ManagerRoutes.detail_sold);
-                      },
+                      child: RaisedGradientButton(
+                    size: size,
+                    child: Text(
+                      'Place a bid',
+                      style:
+                          TxtStyleMobile.txt_Medium(color: AppColor.offWhite),
                     ),
-                  ),
+                    width: size.width - 32,
+                    height: Dimens.HEIGHT_56,
+                    borderRadius: Dimens.RADIUS_8,
+                    onPressed: () {
+                      CustomDialog.DialogMenu(context, size);
+                    },
+                  )),
                   SizedBox(height: 20),
                   Center(
                     child: BorderGradinetButton(
@@ -111,83 +106,51 @@ class HomeScreen extends StatelessWidget {
                           style: TxtStyleMobile.link_Large2),
                       onPressed: () {
                         BaseNavigation.push(context,
-                            routeName: ManagerRoutes.detail_sold);
+                            routeName: ManagerRoutes.detail_auction);
                       },
                     ),
                   ),
                   LiveAcctionWidget(),
-                  CardItemWidget(
-                    urlImage: AppImage.rectangle1,
-                    description: "Silent Color",
+                  CustomSoldFor(
+                    size: size,
+                    pathImage: AppImage.rectangle1,
+                    description: 'Silent Color',
                     name: 'Pawel Czerwinski',
                     status: 'Creator',
-                    avatarUrl: AppImage.avatarImage,
-                    size: size,
-                  ),
-                  SizedBox(height: Dimens.HEIGHT_12),
-                  SoldForButtonWidget(
-                    size: size,
-                    eth: '2.00',
-                    onPressed: () {
-                      BaseNavigation.push(context,
-                          routeName: ManagerRoutes.detail_sold);
-                    },
+                    pathAvatar: AppImage.avatarImage,
+                    soldEth: '2.00',
                   ),
                   SizedBox(height: Dimens.HEIGHT_40),
-                  CardItemWidget(
-                    urlImage: AppImage.rectangle2,
-                    description: "Silent Color",
+                  CustomSoldFor(
+                    size: size,
+                    pathImage: AppImage.rectangle2,
+                    description: 'Silent Color',
                     name: 'Pawel Czerwinski',
                     status: 'Creator',
-                    avatarUrl: AppImage.avatarImage,
-                    size: size,
-                  ),
-                  SizedBox(height: Dimens.HEIGHT_12),
-                  SoldForButtonWidget(
-                    size: size,
-                    eth: '2.00',
-                    onPressed: () {
-                      BaseNavigation.push(context,
-                          routeName: ManagerRoutes.detail_sold);
-                    },
+                    pathAvatar: AppImage.avatarImage,
+                    soldEth: '2.00',
                   ),
                   SizedBox(height: Dimens.HEIGHT_40),
-                  CardItemWidget(
-                    urlImage: AppImage.rectangle3,
-                    description: "Silent Color",
+                  CustomHotbid(
+                    size: size,
+                    pathImage: AppImage.rectangle3,
+                    description: 'Silent Color',
                     name: 'Pawel Czerwinski',
                     status: 'Creator',
-                    avatarUrl: AppImage.avatarImage,
-                    size: size,
-                  ),
-                  SizedBox(height: Dimens.HEIGHT_12),
-                  CurrentBidButtonWidget(
-                    size: size,
+                    pathAvatar: AppImage.avatarImage,
                     current: '2.00',
                     timeEnding: '27m 30s',
-                    onPressed: () {
-                      BaseNavigation.push(context,
-                          routeName: ManagerRoutes.detail_auction);
-                    },
                   ),
                   SizedBox(height: Dimens.HEIGHT_40),
-                  CardItemWidget(
-                    urlImage: AppImage.rectangle4,
-                    description: "Silent Color",
+                  CustomHotbid(
+                    size: size,
+                    pathImage: AppImage.rectangle4,
+                    description: 'Shedd Aquarium',
                     name: 'Pawel Czerwinski',
                     status: 'Creator',
-                    avatarUrl: AppImage.avatarImage,
-                    size: size,
-                  ),
-                  SizedBox(height: Dimens.HEIGHT_12),
-                  CurrentBidButtonWidget(
-                    size: size,
+                    pathAvatar: AppImage.avatarImage,
                     current: '2.00',
                     timeEnding: '27m 30s',
-                    onPressed: () {
-                      BaseNavigation.push(context,
-                          routeName: ManagerRoutes.detail_auction);
-                    },
                   ),
                   HotBidWidget(),
                   ListHotbidWidget(images: images),

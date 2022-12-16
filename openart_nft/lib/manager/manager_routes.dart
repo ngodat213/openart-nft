@@ -8,6 +8,7 @@ import '../screen/discover_creator/discover_creator.dart';
 import '../screen/faq_screen/faq_screen.dart';
 import '../screen/home_screen/home_screen.dart';
 import '../screen/join_community/join_community.dart';
+import '../screen/menu_screen/menu_screen.dart';
 import '../screen/profile_edit/profile_edit.dart';
 import '../screen/profile_empty/profile_empty.dart';
 import '../screen/user_profile/user_profile.dart';
@@ -15,6 +16,7 @@ import '../screen/user_profile/user_profile.dart';
 class ManagerRoutes {
   ManagerRoutes._();
 
+  static String menu_screen = '/menu_screen';
   static String detail_sold = '/detail_screen';
   static String detail_auction = '/detail_auction';
   static String discover_creator = '/discover_creator';
@@ -29,6 +31,7 @@ class ManagerRoutes {
 
   // MANAGERS
   static Map<String, Widget Function(BuildContext)> manager = {
+    menu_screen: (context) => MenuScreen(),
     detail_sold: (context) => DetailSoldScreen(),
     detail_auction: (context) => DetailAuctionScreen(),
     discover_creator: (context) => DiscoverCreatorScreen(),

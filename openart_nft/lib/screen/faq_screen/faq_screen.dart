@@ -23,7 +23,10 @@ class _FAQScreenState extends State<FAQScreen> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              HeaderWidget(margin: EdgeInsets.all(Dimens.PADDING_16)),
+              HeaderWidget(
+                margin: EdgeInsets.all(Dimens.PADDING_16),
+                size: size,
+              ),
               Text('Frequently asked questions',
                   style: TxtStyleMobile.link_Large2),
               SizedBox(height: 12),

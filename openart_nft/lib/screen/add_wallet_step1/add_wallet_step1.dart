@@ -17,16 +17,20 @@ class AddWalletStep1Screen extends StatelessWidget {
       body: SafeArea(
           child: SingleChildScrollView(
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          HeaderWidget(margin: EdgeInsets.all(Dimens.PADDING_16)),
+          HeaderWidget(
+            margin: EdgeInsets.all(Dimens.PADDING_16),
+            size: size,
+          ),
           Container(
               margin: EdgeInsets.only(
                   left: Dimens.PADDING_16, top: Dimens.PADDING_30),
-              child: Text('Add wallet to pay', style: TxtStyleMobile.h3b)),
-          Container(
-            margin: EdgeInsets.only(left: Dimens.PADDING_16),
-            child: Text('Easy to sell your Digital Art with 3 step',
-                style: TxtStyleMobile.txt_Medium()),
-          ),
+              child: Column(
+                children: [
+                  Text('Add wallet to pay', style: TxtStyleMobile.h3b),
+                  Text('Easy to sell your Digital Art with 3 step',
+                      style: TxtStyleMobile.txt_Medium()),
+                ],
+              )),
           SizedBox(height: Dimens.PADDING_24),
           StepperWidget(size: size, step1: 2, step2: 1, step3: 1),
           SizedBox(height: Dimens.PADDING_24),
